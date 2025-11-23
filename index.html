@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pembaca Novel Web Re:Zero</title>
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,300&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -17,9 +18,9 @@
      SKRIN 1: MENU UTAMA (Senarai Bab)
      ========================================= */
   #main-menu {
-    /* IMEJ LATAR BELAKANG DIKEMBALIKAN (FINAL DIRECTOR CUT) */
-    background: linear-gradient(to bottom, rgba(10,10,15,0.5), rgba(10,10,15,0.95)), 
-                url('https://witchculttranslation.com/wp-content/uploads/2025/01/9_13_FinalDirectorCut1.png');
+    /* IMEJ LATAR BELAKANG: Aldebaran & Menara */
+    background: linear-gradient(to bottom, rgba(10,10,15,0.4), rgba(10,10,15,0.95)), 
+                url('https://witchculttranslation.com/wp-content/uploads/2023/08/2408_garcar-min.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -130,7 +131,7 @@
   #reader-view {
     display: none; /* Disembunyikan secara lalai */
     background-color: #050505;
-    /* IMEJ LATAR BELAKANG BAB JUGA MENGGUNAKAN LINK INI */
+    /* IMEJ LATAR BELAKANG DEFAULT */
     background-image: url('https://witchculttranslation.com/wp-content/uploads/2025/01/9_13_FinalDirectorCut1.png');
     background-size: cover;
     background-position: center center;
@@ -256,6 +257,15 @@
   .box-dragon { border-left-color: #ff8c00; }
   .char-dragon { color: #ff8c00; }
 
+  /* Warna Khas untuk Bab 1 (Yorna & Eugard) */
+  .yorna { color: #ff69b4; text-shadow: 0 0 5px rgba(255, 105, 180, 0.3); }
+  .box-yorna { border-left-color: #ff69b4; }
+  .char-yorna { color: #ff69b4; }
+
+  .eugard { color: #9370db; text-shadow: 0 0 5px rgba(147, 112, 219, 0.3); }
+  .box-eugard { border-left-color: #9370db; }
+  .char-eugard { color: #9370db; }
+
   .narrative {
     color: #ccc;
     margin: 25px 0;
@@ -304,18 +314,21 @@
 </head>
 <body>
 
+<!-- ================= SKRIN 1: MENU UTAMA ================= -->
 <div id="main-menu">
   <div class="menu-container">
     <h1 class="phase-title">Fasa 1</h1>
     <input type="text" class="search-bar" id="searchInput" placeholder="Cari Bab..." onkeyup="filterChapters()">
     
     <ul class="chapter-list" id="chapterList">
+      <!-- Bab 1 (Kandungan Yorna & Eugard) -->
       <li class="chapter-item" onclick="openChapter(1)">
         <div class="chapter-link">
           <span class="num">Bab 1:</span> Wahai Doa, Jadilah Seperti Awan
         </div>
       </li>
       
+      <!-- Senarai Bab Lain -->
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 2:</span> Tidak Akan Menjadi Penjahat</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 3:</span> Bagi Setiap Mereka yang Meratapimu</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 4:</span> Si Dungu</div></li>
@@ -330,6 +343,7 @@
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 12:</span> Cahaya Bintang Melangkaui Alam Satu Bilion</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 13:</span> Yang Paling Dicintai dan Yang Paling Tidak Dicintai</div></li>
 
+      <!-- Bab 14 (Pertarungan Utama) -->
       <li class="chapter-item special" onclick="openChapter(14)">
         <div class="chapter-link">
           <span class="num">Bab 14:</span> Yang Terkuat (Aldebaran lwn Reinhard)
@@ -339,6 +353,7 @@
   </div>
 </div>
 
+<!-- ================= SKRIN 2: PAPARAN PEMBACA ================= -->
 <div id="reader-view">
   <div class="nav-bar">
     <button class="back-btn" onclick="closeChapter()">← Kembali ke Menu</button>
@@ -346,18 +361,173 @@
   </div>
 
   <div class="battle-container" id="chapter-content">
-    </div>
+    <!-- Kandungan akan dimasukkan di sini oleh JavaScript -->
+  </div>
 </div>
 
+<!-- ================= LOGIK JAVASCRIPT ================= -->
 <script>
   // --- DATA KANDUNGAN BAB ---
   const chapters = {
     1: `
       <h2 class="battle-title">Bab 1: Wahai Doa, Jadilah Seperti Awan</h2>
-      <div class="narrative" style="text-align:center; padding-top:50px;">
-        <p>...Kandungan untuk Bab 1 akan diletakkan di sini...</p>
-        <p>(Sila klik Bab 14 untuk melihat pertarungan penuh)</p>
+      
+      <div class="narrative">
+        ――Jam-jam terakhir adalah tenang, dan telah berlalu dengan sangat senyap.
       </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">???</span>
+        <span class="dialogue-text">"<span class="red-text">――Wahai Bintangku.</span>"</span>
+      </div>
+
+      <div class="narrative">
+        Memang, nada suara itu datar, namun darjah cinta yang terkandung dalam panggilannya melimpah ruah, jadi apabila Yorna, sebagai Iris, mendongak memandang lelaki di sebelahnya, bulu mata panjangnya bergetar.
+        Tiada apa-apa yang luar biasa tentang suara itu, ia sesuatu yang terasa seolah-olah telah memanggilnya beratus-ratus, tidak, beribu-ribu kali semasa pertemuan ajaib ini―― namun, pada ketika ini, ia terasa istimewa.
+        <br><br>
+        ――Tidak, tepatnya, jika saat ini sahaja dikecualikan, maka mana-mana panggilan lain itu juga istimewa. Walau bagaimanapun, keistimewaan saat ini berbeza daripada semua yang telah berlaku sebelum ini.
+        Lagipun, ia adalah panggilan yang menandakan penghujung tempoh ajaib ini.
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"Ya, <span class="red-text">Tuanku</span>."</span>
+      </div>
+
+      <div class="narrative">
+        Menatap kembali ke dalam mata yang memandangnya, dia membalas dari bibirnya sendiri panggilan yang penuh dengan cinta.
+        Suaranya tidak gementar, dan dia memuji dirinya sendiri kerana tidak membiarkan perasaan wanitanya membuatnya runtuh. Pada saat perpisahan mereka sebelum ini, Iris/Yorna tidak dapat meninggalkan sebarang kata-kata untuknya. Tetapi, setiap kali dia menjelma semula dan menoleh ke belakang pada masa itu, dia telah berfikir berkali-kali tentang apa yang akan dia lakukan jika diberi peluang lagi.
+        <br><br>
+        Jika diberi peluang lagi, dia pasti tidak akan meninggalkan raungan seorang wanita yang lemah.
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"Ini adalah terbalik dari masa itu. Beta akan pergi ke alam sana dahulu sebelum kamu."</span>
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"Begitulah... Nak panggil ni balas dendam pun, saya pasti <span class="red-text">Tuanku</span> dah tahu tentang niat jahat dalam dunia manusia ni."</span>
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"Benar. Banyak yang beta pelajari... Tidak, ia diajarkan kepada beta. Oleh ramai yang berjalan di samping beta, di mana kamu adalah yang pertama."</span>
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"――――"</span>
+      </div>
+
+      <div class="narrative">
+        Apabila mata berbentuk badam itu menyepet, dia―― <span class="red-text">Eugard Vollachia</span>, mengenang kembali hari-hari lama itu, pada orang-orang yang hadir di dalamnya, dan getaran lembut kecemerlangan matanya menyebabkan Yorna merasakan sensasi menusuk melalui dadanya.
+        Selalunya, dia adalah jenis orang yang memakai ekspresi tegas kecuali apabila berada di hadapan Iris.
+        Kerana dia adalah orang yang sedemikian, Iris tertanya-tanya jika dia pernah sekalipun dapat merehatkan pipi atau keningnya selepas dia meninggal dunia.
+        Dan sekarang selepas ini, selepas dia pergi ke tempat antara langit dan bumi itu, adakah dia――.
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"Jangan takut, <span class="red-text">Wahai Bintangku</span>. Hidup beta ni diberkati tanpa disangka."</span>
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"――Ah."</span>
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"Beta jumpa kamu, dan dapat nyawa. Beta jalan dengan kamu, dan dapat berkat. Beta berpisah dengan kamu, dan melakukan kesilapan besar, tapi sekarang takdir temukan kita sekali lagi, beta dapat peluang untuk betulkannya."</span>
+      </div>
+
+      <div class="narrative">
+        Kata-kata Eugard, suara indah seseorang yang menghitung berkat mereka satu demi satu, dengan lembut melarutkan kebimbangan dan ketakutan dalam hati Iris/Yorna, merungkainya dengan penuh kasih sayang.
+        Sejak zaman purba, sejak dia kehilangan Iris yang paling disayanginya, Eugard membara dengan kemarahan, dan dalam kebenciannya meninggalkan undang-undang yang salah yang menjadi pencetus kepada tragedi yang tidak terkira banyaknya―― keturunan Eugard, Maharaja Vollachia semasa yang dipuji sebagai Maharaja Bijaksana, telah berjanji untuk memansuhkan undang-undang itu.
+        Untuk mengangkat sumpahan yang mengikat kaum serigala dan kaum tikus tanah, itulah keinginan terdalam Iris/Yorna, dan penyesalan terakhir Eugard semasa dia masih hidup―― akhirnya, dia akan dapat mengembalikan dunia ini kepada mereka yang berhak hidup di zaman ini.
+        Untuk tujuan itu――,
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"<span class="red-text">Wahai Bintangku</span>, kamu termasuk dalam kalangan mereka."</span>
+      </div>
+
+      <div class="narrative">
+        Tiba-tiba, semasa dia memeluknya, kata-kata Eugard menyebabkan nafas Iris/Yorna terhenti. Terasa seolah-olah emosi di dalam dirinya telah dibedah dengan betul, lebih tepat daripada sebelumnya.
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"<span class="red-text">Tuanku</span>… Saya… Saya…"</span>
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"Walaupun ia diberikan kepada kamu dalam bentuk yang tidak diingini, beta bayangkan tidak kira zaman mana kamu berada, kamu pasti akan menghabiskan hari-hari kamu membentuk ikatan dengan bersungguh-sungguh. Sudah tentu, walaupun dalam bentuk semasa kamu, perkara yang sama berlaku. ――Itu, adalah sesuatu yang kamu patut penuhi sepenuhnya."</span>
+      </div>
+
+      <div class="narrative">
+        Kepada Iris/Yorna, dia yang tersesat tentang apa yang perlu dilakukan dengan kewujudan luar biasa yang dikenali sebagai dirinya sendiri, kata-kata itu dengan lembut menunjukkan pilihan untuk bergerak ke arah cara hidup yang mudah difahami.
+        Tidak kira masa, Eugard sentiasa betul.
+        Itu bukan kerana Eugard bijak, atau kerana dia kuat. Ia adalah kerana dia memikirkan dengan ikhlas tentang mereka yang dihadapinya, dengan rasa hormat, kerana dia adalah Maharaja yang pengasih yang mendoakan kebahagiaan orang lain.
+        Dikenali sebagai <span class="red-text">Raja Duri</span>, dan ditakuti lebih daripada yang lain, Maharaja kesayangan Iris dengan bersungguh-sungguh memikirkan tentang, menghormati, dan mendoakan Yorna dengan cinta yang mendalam yang tidak tertanggung.
+        Oleh itu, bagi Iris dan Yorna, kata-kata Eugard akan sentiasa betul.
+        Oleh itu, hakikat bahawa kebenaran dalam kata-katanya juga akan terpakai untuk orang selain Iris/Yorna bermakna bahawa――,
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"――Saya, tiada pilihan selain menghabiskan saki-baki hidup saya membuktikannya."</span>
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"Itu adalah satu perkhidmatan yang hebat."</span>
+      </div>
+
+      <div class="narrative">
+        Mendengar jawapan nekad Iris/Yorna, Eugard membalas dengan senyuman.
+        Melihat cara Eugard yang pendiam, Iris/Yorna menyepetkan sedikit matanya, dan memanjangkan tangannya supaya dia boleh menyentuh pipinya, sambil dia mendekatkan bibirnya ke bibir Eugard.
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"――――"</span>
+      </div>
+
+      <div class="narrative">
+        Bibir bertemu dan bertindih, apabila mereka yang kedua-duanya telah mati pada zaman itu, seorang lelaki dan seorang wanita yang sepatutnya tidak pernah dapat bersatu semula, dipisahkan oleh seluruh dunia, kini berada paling dekat yang pernah mereka alami.
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"――――"</span>
+      </div>
+
+      <div class="narrative">
+        Seperti itu, sentuhan paling rapat yang pernah mereka lakukan di dunia ini berterusan seketika, dan kemudian sedikit lagi, dan sedikit lagi, sebelum jarak antara mereka perlahan-lahan bertambah―― Mata Iris/Yorna, terkunci dengan Eugard.
+        Dan kemudian――,
+      </div>
+
+      <div class="dialogue-box box-eugard">
+        <span class="char-name char-eugard">Eugard</span>
+        <span class="dialogue-text">"――<span class="red-text">Wahai Bintangku, beta sangat mencintaimu.</span>"</span>
+      </div>
+
+      <div class="dialogue-box box-yorna">
+        <span class="char-name char-yorna">Yorna</span>
+        <span class="dialogue-text">"Saya juga, <span class="red-text">Tuanku</span>. Selamanya, tanpa pudar untuk keabadian, hati saya akan merindui kamu."</span>
+      </div>
+
+      <div class="narrative">
+        Setelah bertukar ciuman, setelah menyampaikan kata-kata yang penuh dengan cinta antara satu sama lain, detik-detik terakhirnya adalah bibirnya mengukir senyuman.
+        Bagi kisah lama yang dikenali sebagai "Iris dan Raja Duri", kisah yang bermula pada zaman purba, kisah yang terus menangguhkan kesimpulannya sendiri sehingga hari ini, ini adalah penutup tirai yang sebenar.
+      </div>
+
+      <div class="loop-marker">△▼△▼△▼△</div>
     `,
     14: `
       <h2 class="battle-title">Aldebaran lwn Reinhard</h2>
@@ -471,6 +641,7 @@
         ――Lagipun, cahaya bintang yang berkelip di langit malam sedang jatuh menjunam, mensasarkan tepat ke arah Saint Pedang.
       </div>
 
+      <!-- IMAGE 1: FALLING STAR -->
       <img src="https://witchculttranslation.com/wp-content/uploads/2025/01/9_14_0.png" alt="Al Shario Falling Star" class="scene-image">
 
       <div class="narrative">
@@ -498,6 +669,7 @@
         <span class="dialogue-text">"Perlindungan Suci <span class="highlight">Imbangan Bola</span>."</span>
       </div>
 
+      <!-- BAHAGIAN 2 -->
       <div class="dialogue-box box-dragon">
         <span class="char-name char-dragon">"Aldebaran" (Naga)</span>
         <span class="dialogue-text">"Imbangan... Bola..."</span>
@@ -591,6 +763,7 @@
 
       <div class="loop-marker">× × ×</div>
 
+      <!-- BAHAGIAN 3 -->
       <div class="dialogue-box box-reinhard">
         <span class="char-name char-reinhard">???</span>
         <span class="dialogue-text">"<span class="red-text">――Setakat itu sahajalah kamu.</span>"</span>
@@ -714,7 +887,7 @@
       </div>
 
       <div class="wall-of-text">
-        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
+        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
       </div>
 
       <div class="narrative">
@@ -765,6 +938,7 @@
 
       <div class="loop-marker">△▼△▼△▼△</div>
 
+      <!-- BAHAGIAN 4 -->
       <div class="narrative">
         Jarak antara kedua-duanya hilang dalam sekelip mata.
       </div>
@@ -884,8 +1058,10 @@
         <span class="dialogue-text">"<span class="red-text">Tembak!!</span>"</span>
       </div>
 
+      <!-- IMAGE 2: FIRE COMMAND -->
       <img src="https://witchculttranslation.com/wp-content/uploads/2025/01/9_14_1-min.png" alt="Aldebaran Fire Command" class="scene-image">
 
+      <!-- BAHAGIAN 5 -->
       <div class="narrative">
         Magia Railgun kedua ditembak, dan sisik itu menembusi betul-betul di tengah Reinhard.
       </div>
