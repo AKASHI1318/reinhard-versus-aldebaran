@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pembaca Novel Web Re:Zero</title>
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,300&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -15,7 +14,7 @@
   body, html { margin: 0; padding: 0; height: 100%; scroll-behavior: smooth; background-color: #050505; }
 
   /* =========================================
-     SKRIN 1: MENU UTAMA (Senarai Bab)
+      SKRIN 1: MENU UTAMA (Senarai Bab)
      ========================================= */
   #main-menu {
     /* IMEJ LATAR BELAKANG: Aldebaran & Menara */
@@ -126,7 +125,7 @@
   }
 
   /* =========================================
-     SKRIN 2: PAPARAN PEMBACA (Pertarungan)
+      SKRIN 2: PAPARAN PEMBACA (Pertarungan)
      ========================================= */
   #reader-view {
     display: none; /* Disembunyikan secara lalai */
@@ -244,28 +243,6 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
 
-  /* Warna Watak */
-  .reinhard { color: #87CEEB; text-shadow: 0 0 5px rgba(135, 206, 235, 0.3); }
-  .box-reinhard { border-left-color: #87CEEB; }
-  .char-reinhard { color: #87CEEB; }
-
-  .aldebaran { color: #ff4d4d; text-shadow: 0 0 5px rgba(255, 77, 77, 0.3); }
-  .box-al { border-left-color: #ff4d4d; }
-  .char-aldebaran { color: #ff4d4d; }
-
-  .dragon-al { color: #ff8c00; text-shadow: 0 0 5px rgba(255, 140, 0, 0.3); }
-  .box-dragon { border-left-color: #ff8c00; }
-  .char-dragon { color: #ff8c00; }
-
-  /* Warna Khas untuk Bab 1 (Yorna & Eugard) */
-  .yorna { color: #ff69b4; text-shadow: 0 0 5px rgba(255, 105, 180, 0.3); }
-  .box-yorna { border-left-color: #ff69b4; }
-  .char-yorna { color: #ff69b4; }
-
-  .eugard { color: #9370db; text-shadow: 0 0 5px rgba(147, 112, 219, 0.3); }
-  .box-eugard { border-left-color: #9370db; }
-  .char-eugard { color: #9370db; }
-
   .narrative {
     color: #ccc;
     margin: 25px 0;
@@ -310,25 +287,59 @@
     text-align: justify;
     margin: 20px 0;
   }
+
+  /* --- WARNA WATAK (DIKEMASKINI) --- */
+  
+  /* Reinhard */
+  .reinhard { color: #87CEEB; text-shadow: 0 0 5px rgba(135, 206, 235, 0.3); }
+  .box-reinhard { border-left-color: #87CEEB; }
+  .char-reinhard { color: #87CEEB; }
+
+  /* Aldebaran */
+  .aldebaran { color: #ff4d4d; text-shadow: 0 0 5px rgba(255, 77, 77, 0.3); }
+  .box-al { border-left-color: #ff4d4d; }
+  .char-aldebaran { color: #ff4d4d; }
+
+  .dragon-al { color: #ff8c00; text-shadow: 0 0 5px rgba(255, 140, 0, 0.3); }
+  .box-dragon { border-left-color: #ff8c00; }
+  .char-dragon { color: #ff8c00; }
+
+  /* Vincent Vollachia */
+  .box-vincent { border-left-color: #9370db; } /* Purple Diraja */
+  .char-vincent { color: #9370db; text-shadow: 0 0 5px rgba(147, 112, 219, 0.3); }
+
+  /* Petra */
+  .box-petra { border-left-color: #ffb74d; } /* Orange lembut */
+  .char-petra { color: #ffb74d; text-shadow: 0 0 5px rgba(255, 183, 77, 0.3); }
+
+  /* Zikr */
+  .box-zikr { border-left-color: #8d6e63; } /* Brown tanah */
+  .char-zikr { color: #a1887f; }
+
+  /* Serena */
+  .box-serena { border-left-color: #d81b60; } /* Merah garang */
+  .char-serena { color: #e91e63; text-shadow: 0 0 5px rgba(233, 30, 99, 0.3); }
+
+  /* Roswaal */
+  .box-roswaal { border-left-color: #3f51b5; } /* Indigo/Biru Gelap */
+  .char-roswaal { color: #7986cb; text-shadow: 0 0 5px rgba(63, 81, 181, 0.3); }
+
 </style>
 </head>
 <body>
 
-<!-- ================= SKRIN 1: MENU UTAMA ================= -->
 <div id="main-menu">
   <div class="menu-container">
     <h1 class="phase-title">Fasa 1</h1>
     <input type="text" class="search-bar" id="searchInput" placeholder="Cari Bab..." onkeyup="filterChapters()">
     
     <ul class="chapter-list" id="chapterList">
-      <!-- Bab 1 (Kandungan Yorna & Eugard) -->
       <li class="chapter-item" onclick="openChapter(1)">
         <div class="chapter-link">
-          <span class="num">Bab 1:</span> Wahai Doa, Jadilah Seperti Awan
+          <span class="num">Bab 1:</span> Pasca Bencana
         </div>
       </li>
       
-      <!-- Senarai Bab Lain -->
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 2:</span> Tidak Akan Menjadi Penjahat</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 3:</span> Bagi Setiap Mereka yang Meratapimu</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 4:</span> Si Dungu</div></li>
@@ -343,7 +354,6 @@
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 12:</span> Cahaya Bintang Melangkaui Alam Satu Bilion</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 13:</span> Yang Paling Dicintai dan Yang Paling Tidak Dicintai</div></li>
 
-      <!-- Bab 14 (Pertarungan Utama) -->
       <li class="chapter-item special" onclick="openChapter(14)">
         <div class="chapter-link">
           <span class="num">Bab 14:</span> Yang Terkuat (Aldebaran lwn Reinhard)
@@ -353,7 +363,6 @@
   </div>
 </div>
 
-<!-- ================= SKRIN 2: PAPARAN PEMBACA ================= -->
 <div id="reader-view">
   <div class="nav-bar">
     <button class="back-btn" onclick="closeChapter()">← Kembali ke Menu</button>
@@ -361,173 +370,289 @@
   </div>
 
   <div class="battle-container" id="chapter-content">
-    <!-- Kandungan akan dimasukkan di sini oleh JavaScript -->
-  </div>
+    </div>
 </div>
 
-<!-- ================= LOGIK JAVASCRIPT ================= -->
 <script>
   // --- DATA KANDUNGAN BAB ---
   const chapters = {
     1: `
-      <h2 class="battle-title">Bab 1: Wahai Doa, Jadilah Seperti Awan</h2>
+      <h2 class="battle-title">Bab 1: Pasca Bencana</h2>
       
       <div class="narrative">
-        ――Jam-jam terakhir adalah tenang, dan telah berlalu dengan sangat senyap.
+        ――Subuh menyinsing pada malam pertama sejak <span class="red-text">Bencana Besar</span> yang menggoncang entiti Empayar Vollachia telah berakhir.
+        Ancaman mayat hidup yang membinasakan seluruh Empayar telah dielakkan melalui penyatuan rakyat empayar, yang mengabdikan diri kepada undang-undang besi dan darah; di barisan hadapan Serigala Pedang Vollachia itu, adalah susuk tubuh agung puncak mereka, <span class="red-text">Vincent Vollachia</span>, yang telah bertukar pukulan secara langsung menentang ketua musuh dengan Pedang Yang diangkat tinggi.
       </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">???</span>
-        <span class="dialogue-text">"<span class="red-text">――Wahai Bintangku.</span>"</span>
+      
+      <div class="narrative">
+        Berpusat di sekitar Ibu Kota Diraja Lupugana, kerosakan telah sampai ke setiap bandar utama Vollachia, seperti Bandar Berkubu Garkla, Glarasia, Bandar Besi dan Darah, Bandar Iblis Chaosflame, dan Bandar Lautan Awan Mezoreia; namun, setiap bandar telah berjaya mengelak daripada jatuh ke dalam keadaan bencana.
+        Oleh itu, walaupun ditinggalkan dengan parut besar, momentum kemenangan adalah apa yang akhirnya menyelubungi Empayar Vollachia.
       </div>
 
       <div class="narrative">
-        Memang, nada suara itu datar, namun darjah cinta yang terkandung dalam panggilannya melimpah ruah, jadi apabila Yorna, sebagai Iris, mendongak memandang lelaki di sebelahnya, bulu mata panjangnya bergetar.
-        Tiada apa-apa yang luar biasa tentang suara itu, ia sesuatu yang terasa seolah-olah telah memanggilnya beratus-ratus, tidak, beribu-ribu kali semasa pertemuan ajaib ini―― namun, pada ketika ini, ia terasa istimewa.
-        <br><br>
-        ――Tidak, tepatnya, jika saat ini sahaja dikecualikan, maka mana-mana panggilan lain itu juga istimewa. Walau bagaimanapun, keistimewaan saat ini berbeza daripada semua yang telah berlaku sebelum ini.
-        Lagipun, ia adalah panggilan yang menandakan penghujung tempoh ajaib ini.
+        Berita kematian seorang wanita tunggal yang telah menyumbang besar kepada kemenangan Empayar Vollachia dalam pertempuran menentang <span class="red-text">Bencana Besar</span>, yang telah hidup seperti api dan menawan ramai hati――.
+        Di dalam sebuah bilik di Bandar Berkubu Garkla, yang berfungsi sebagai ibu pejabat sementara menggantikan Ibu Kota Diraja yang musnah, Maharaja <span class="red-text">Vincent Vollachia</span> kebetulan mendengar berita kematian itu, mewujudkan kesunyian yang sangat tidak seperti dirinya, yang akan bertindak balas terhadap semua perkara dalam sekelip mata pertimbangan, dan selepas menghabiskan sedikit masa dengan kepalanya menunduk――,
       </div>
 
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"Ya, <span class="red-text">Tuanku</span>."</span>
+      <div class="dialogue-box box-vincent">
+        <span class="char-name char-vincent">Vincent Vollachia</span>
+        <span class="dialogue-text">"――Beta mengerti."</span>
       </div>
 
       <div class="narrative">
-        Menatap kembali ke dalam mata yang memandangnya, dia membalas dari bibirnya sendiri panggilan yang penuh dengan cinta.
-        Suaranya tidak gementar, dan dia memuji dirinya sendiri kerana tidak membiarkan perasaan wanitanya membuatnya runtuh. Pada saat perpisahan mereka sebelum ini, Iris/Yorna tidak dapat meninggalkan sebarang kata-kata untuknya. Tetapi, setiap kali dia menjelma semula dan menoleh ke belakang pada masa itu, dia telah berfikir berkali-kali tentang apa yang akan dia lakukan jika diberi peluang lagi.
-        <br><br>
-        Jika diberi peluang lagi, dia pasti tidak akan meninggalkan raungan seorang wanita yang lemah.
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"Ini adalah terbalik dari masa itu. Beta akan pergi ke alam sana dahulu sebelum kamu."</span>
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"Begitulah... Nak panggil ni balas dendam pun, saya pasti <span class="red-text">Tuanku</span> dah tahu tentang niat jahat dalam dunia manusia ni."</span>
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"Benar. Banyak yang beta pelajari... Tidak, ia diajarkan kepada beta. Oleh ramai yang berjalan di samping beta, di mana kamu adalah yang pertama."</span>
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"――――"</span>
-      </div>
-
-      <div class="narrative">
-        Apabila mata berbentuk badam itu menyepet, dia―― <span class="red-text">Eugard Vollachia</span>, mengenang kembali hari-hari lama itu, pada orang-orang yang hadir di dalamnya, dan getaran lembut kecemerlangan matanya menyebabkan Yorna merasakan sensasi menusuk melalui dadanya.
-        Selalunya, dia adalah jenis orang yang memakai ekspresi tegas kecuali apabila berada di hadapan Iris.
-        Kerana dia adalah orang yang sedemikian, Iris tertanya-tanya jika dia pernah sekalipun dapat merehatkan pipi atau keningnya selepas dia meninggal dunia.
-        Dan sekarang selepas ini, selepas dia pergi ke tempat antara langit dan bumi itu, adakah dia――.
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"Jangan takut, <span class="red-text">Wahai Bintangku</span>. Hidup beta ni diberkati tanpa disangka."</span>
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"――Ah."</span>
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"Beta jumpa kamu, dan dapat nyawa. Beta jalan dengan kamu, dan dapat berkat. Beta berpisah dengan kamu, dan melakukan kesilapan besar, tapi sekarang takdir temukan kita sekali lagi, beta dapat peluang untuk betulkannya."</span>
-      </div>
-
-      <div class="narrative">
-        Kata-kata Eugard, suara indah seseorang yang menghitung berkat mereka satu demi satu, dengan lembut melarutkan kebimbangan dan ketakutan dalam hati Iris/Yorna, merungkainya dengan penuh kasih sayang.
-        Sejak zaman purba, sejak dia kehilangan Iris yang paling disayanginya, Eugard membara dengan kemarahan, dan dalam kebenciannya meninggalkan undang-undang yang salah yang menjadi pencetus kepada tragedi yang tidak terkira banyaknya―― keturunan Eugard, Maharaja Vollachia semasa yang dipuji sebagai Maharaja Bijaksana, telah berjanji untuk memansuhkan undang-undang itu.
-        Untuk mengangkat sumpahan yang mengikat kaum serigala dan kaum tikus tanah, itulah keinginan terdalam Iris/Yorna, dan penyesalan terakhir Eugard semasa dia masih hidup―― akhirnya, dia akan dapat mengembalikan dunia ini kepada mereka yang berhak hidup di zaman ini.
-        Untuk tujuan itu――,
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"<span class="red-text">Wahai Bintangku</span>, kamu termasuk dalam kalangan mereka."</span>
-      </div>
-
-      <div class="narrative">
-        Tiba-tiba, semasa dia memeluknya, kata-kata Eugard menyebabkan nafas Iris/Yorna terhenti. Terasa seolah-olah emosi di dalam dirinya telah dibedah dengan betul, lebih tepat daripada sebelumnya.
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"<span class="red-text">Tuanku</span>… Saya… Saya…"</span>
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"Walaupun ia diberikan kepada kamu dalam bentuk yang tidak diingini, beta bayangkan tidak kira zaman mana kamu berada, kamu pasti akan menghabiskan hari-hari kamu membentuk ikatan dengan bersungguh-sungguh. Sudah tentu, walaupun dalam bentuk semasa kamu, perkara yang sama berlaku. ――Itu, adalah sesuatu yang kamu patut penuhi sepenuhnya."</span>
-      </div>
-
-      <div class="narrative">
-        Kepada Iris/Yorna, dia yang tersesat tentang apa yang perlu dilakukan dengan kewujudan luar biasa yang dikenali sebagai dirinya sendiri, kata-kata itu dengan lembut menunjukkan pilihan untuk bergerak ke arah cara hidup yang mudah difahami.
-        Tidak kira masa, Eugard sentiasa betul.
-        Itu bukan kerana Eugard bijak, atau kerana dia kuat. Ia adalah kerana dia memikirkan dengan ikhlas tentang mereka yang dihadapinya, dengan rasa hormat, kerana dia adalah Maharaja yang pengasih yang mendoakan kebahagiaan orang lain.
-        Dikenali sebagai <span class="red-text">Raja Duri</span>, dan ditakuti lebih daripada yang lain, Maharaja kesayangan Iris dengan bersungguh-sungguh memikirkan tentang, menghormati, dan mendoakan Yorna dengan cinta yang mendalam yang tidak tertanggung.
-        Oleh itu, bagi Iris dan Yorna, kata-kata Eugard akan sentiasa betul.
-        Oleh itu, hakikat bahawa kebenaran dalam kata-katanya juga akan terpakai untuk orang selain Iris/Yorna bermakna bahawa――,
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"――Saya, tiada pilihan selain menghabiskan saki-baki hidup saya membuktikannya."</span>
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"Itu adalah satu perkhidmatan yang hebat."</span>
-      </div>
-
-      <div class="narrative">
-        Mendengar jawapan nekad Iris/Yorna, Eugard membalas dengan senyuman.
-        Melihat cara Eugard yang pendiam, Iris/Yorna menyepetkan sedikit matanya, dan memanjangkan tangannya supaya dia boleh menyentuh pipinya, sambil dia mendekatkan bibirnya ke bibir Eugard.
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"――――"</span>
-      </div>
-
-      <div class="narrative">
-        Bibir bertemu dan bertindih, apabila mereka yang kedua-duanya telah mati pada zaman itu, seorang lelaki dan seorang wanita yang sepatutnya tidak pernah dapat bersatu semula, dipisahkan oleh seluruh dunia, kini berada paling dekat yang pernah mereka alami.
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"――――"</span>
-      </div>
-
-      <div class="narrative">
-        Seperti itu, sentuhan paling rapat yang pernah mereka lakukan di dunia ini berterusan seketika, dan kemudian sedikit lagi, dan sedikit lagi, sebelum jarak antara mereka perlahan-lahan bertambah―― Mata Iris/Yorna, terkunci dengan Eugard.
-        Dan kemudian――,
-      </div>
-
-      <div class="dialogue-box box-eugard">
-        <span class="char-name char-eugard">Eugard</span>
-        <span class="dialogue-text">"――<span class="red-text">Wahai Bintangku, beta sangat mencintaimu.</span>"</span>
-      </div>
-
-      <div class="dialogue-box box-yorna">
-        <span class="char-name char-yorna">Yorna</span>
-        <span class="dialogue-text">"Saya juga, <span class="red-text">Tuanku</span>. Selamanya, tanpa pudar untuk keabadian, hati saya akan merindui kamu."</span>
-      </div>
-
-      <div class="narrative">
-        Setelah bertukar ciuman, setelah menyampaikan kata-kata yang penuh dengan cinta antara satu sama lain, detik-detik terakhirnya adalah bibirnya mengukir senyuman.
-        Bagi kisah lama yang dikenali sebagai "Iris dan Raja Duri", kisah yang bermula pada zaman purba, kisah yang terus menangguhkan kesimpulannya sendiri sehingga hari ini, ini adalah penutup tirai yang sebenar.
+        Kata-kata ringkas itu, adalah semua yang dia bicarakan.
       </div>
 
       <div class="loop-marker">△▼△▼△▼△</div>
+
+      <div class="narrative">
+        Pertarungan menentang <span class="red-text">Bencana Besar</span> telah berakhir, dan orang ramai mula bergerak untuk menuntut semula kehidupan mereka.
+        Vollachia mengalami kemusnahan teruk akibat tentera mayat hidup semasa Bencana Besar yang tidak pernah berlaku sebelum ini, tetapi penduduk alam itu dengan tegas mengangkat kepala mereka tinggi, berdiri semula satu demi satu semasa mereka mula membina semula tanah itu.
+        Pemandangan rakyat Empayar itu hanya membanjiri perasaan <span class="red-text">Petra Leyte</span>.
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Walaupun, saya tak begitu sukakan Empayar ni sangat…"</span>
+      </div>
+
+      <div class="narrative">
+        Setelah berkata demikian, dengan perasaan bercampur baur, Petra berdiri di jalan-jalan Bandar Berkubu itu.
+        Sebahagian besar sebab Petra tidak menyukai Empayar adalah kemarahan bahawa ini adalah tempat di mana rakan berharganya dan minat cinta Petra, <span class="red-text">Natsuki Subaru</span>, telah dibawa pergi secara paksa.
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"――<span class="red-text">Subaru.</span>"</span>
+      </div>
+
+      <div class="narrative">
+        Petra, yang di khalayak ramai memanggilnya dengan gelaran "Sama", bimbang akan lelaki yang sudah pasti telah melakukan lebih banyak untuk Empayar daripada orang lain, malah lebih daripada Maharaja sendiri.
+        Kerana Subaru adalah orang yang begitu baik dan penuh belas kasihan, Petra amat risau tentang betapa hatinya mungkin telah haus di Empayar yang penuh dengan perkara-perkara mengerikan ini.
+        Walaupun begitu, paku terakhir di dalam keranda itu terlalu berat untuk Subaru, yang mempunyai begitu banyak perkara untuk dirisaukan.
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"<span class="red-text">Priscilla Barielle-sama…</span>"</span>
+      </div>
+
+      <div class="narrative">
+        Itu adalah nama wanita yang telah menyebabkan luka yang amat besar, mendalam, dan menyakitkan di hati Subaru.
+        Disebabkan kedudukan Petra, dia tidak pernah bertukar sepatah kata pun dengannya. Namun, peluang itu ada.
+        Dengan tidak berinteraksi dengan Priscilla, Petra tidak mempunyai hak untuk meratapinya―― untuk meratapi kematian <span class="red-text">Priscilla Barielle</span>, dan, oleh itu, mendapati sukar untuk bersimpati dengan Subaru dan Emilia.
+        Ia akan menjadi sukar untuk memberitahu dua orang yang sangat patah hati bahawa dia memahami apa yang mereka lalui.
+        Ini adalah sesuatu yang amat mengecewakan bagi Petra sekarang――.
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">???</span>
+        <span class="dialogue-text">"――Helo, helo, Cik Petra, adakah awak bersendirian?"</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Oh, Zikr-san."</span>
+      </div>
+
+      <div class="narrative">
+        Petra, yang telah mengetap bibirnya dan menegangkan pipinya, mendongak mendengar panggilan itu, dan hadir di situ ialah <span class="red-text">Zikr Osman</span> dengan gaya rambut bulat dan lebat.
+        Sebagai Jeneral Empayar, Zikr memainkan peranan penting dalam pertempuran menentang Bencana Besar, dan dia adalah orang yang sangat disenangi yang melayan Petra seperti orang biasa tanpa bersikap angkuh tentang kedudukannya.
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Saya telah selesai menyusun semula semua tentera, jadi saya akhirnya turun untuk memeriksa kerosakan sendiri. Saya telah mendengar laporan, tetapi saya perlu melihatnya sendiri."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Begitu rupanya. Saya tidak tahu butiran penyusunan semula itu… tapi syabas."</span>
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Terima kasih atas keprihatinan awak. Walau bagaimanapun, peranan yang saya dapat mainkan adalah tidak penting berbanding mereka yang bekerja begitu bertenaga, seperti Jeneral Kelas Pertama Goz dan Jeneral Kelas Pertama Kafma."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Saya tidak rasa awak boleh kata kerja keras awak tidak penting sebab salah seorang daripada kamu bekerja lebih keras daripada yang lain."</span>
+      </div>
+
+      <div class="narrative">
+        Zikr, kelihatan malu, menjadi lebih malu lagi dengan kenyataan Petra.
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Jika ada sebarang ganjaran yang boleh didapati, pemandangan ini, keputusan ini, itulah dia. Duli Yang Maha Mulia Maharaja melarikan diri ke Timur, dan saya kebetulan berada di Bandar Kubu atas satu misi. Terima kasih kepada kebetulan ini, saya mendapat penghormatan untuk menemani Duli Yang Maha Mulia dan hadir pada saat ini. Saya sememangnya diberkati."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"…Saya tak pasti. Zikr-san, bukankah awak layak mendapat lebih banyak pujian?"</span>
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Adakah awak tidak faham? Kalau begitu, Cik Petra, tak bolehkah awak fikirkan seseorang yang disukai dalam fikiran awak yang cerdas itu?"</span>
+      </div>
+
+      <div class="narrative">
+        Petra mengeluarkan bunyi "hah" pada cadangan mengejut itu. Dalam fikirannya, apa yang dia samar-samar boleh ingat hanyalah <span class="red-text">Natsuki Subaru</span>.
+        Zikr mengangguk dalam-dalam sebagai tindak balas kepada Petra.
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Seseorang yang disukai itu akan tersenyum kepada awak hasil daripada perbuatan awak. Adakah itu tidak cukup untuk membuatkan awak rasa dihargai?"</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Itu… hmm, ya."</span>
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Ia adalah sama. Saya adalah Jeneral Empayar Vollachia, tetapi orang yang Cik Petra fikirkan itu mungkin jauh lebih hebat daripada saya, sekurang-kurangnya pada pendapat saya. Jadi, ini sudah memadai."</span>
+      </div>
+
+      <div class="narrative">
+        Begitulah kata Zikr, dengan sebelah mata tertutup dan tangannya memegang dada sambil tersenyum kepada Petra.
+        Sebab itulah Petra juga secara senyap menundukkan kepalanya dan tidak dapat berkata apa-apa――,
+      </div>
+
+      <div class="dialogue-box box-serena">
+        <span class="char-name char-serena">???</span>
+        <span class="dialogue-text">"――Walau bagaimanapun, Duli Yang Maha Mulia Vincent menyokong sepenuhnya ganjaran dan hukuman mengikut merit. Saya tidak setuju orang yang telah melakukan perkhidmatan berjasa sedemikian berkata perkara yang tidak mementingkan diri, kerana ia menyukarkan askar untuk meluahkan pendapat mereka."</span>
+      </div>
+
+      <div class="narrative">
+        Kemudian, sebaliknya Petra, yang telah menutup mulutnya, satu suara menyampuk dari arah yang berbeza. Petra dan Zikr menoleh untuk melihat <span class="red-text">Serena</span> berjalan perlahan ke arah mereka.
+        Serena Dracroy, dengan parut putih yang tersendiri di pipinya yang bagaimanapun tidak mencacatkan kecantikan bermaruahnya, ditemani oleh kenalannya <span class="red-text">Roswaal</span> di sebelahnya, yang membuatkan bibir Petra mencebik.
+      </div>
+
+      <div class="dialogue-box box-serena">
+        <span class="char-name char-serena">Serena Dracroy</span>
+        <span class="dialogue-text">"Seperti biasa, macam mana awak boleh sangat tidak disukai oleh seseorang yang nampak cukup tua untuk jadi anak perempuan awak? Awak tak boleh merungut tentang ditikam dari belakang oleh seseorang yang secara terbuka menunjukkan niat memberontak."</span>
+      </div>
+
+      <div class="dialogue-box box-roswaal">
+        <span class="char-name char-roswaal">Roswaal</span>
+        <span class="dialogue-text">"Saya tidak akan sesekali mengupah kanak-kanak yang tidak boleh memikirkan tentang akiiiibatnya~. Tidak kira apa persepsi awak terhadap saya, saya hanya menggaji orang yang cekap seperti Petra-kun, Otto-kun, dan seumpamanya."</span>
+      </div>
+
+      <div class="dialogue-box box-serena">
+        <span class="char-name char-serena">Serena Dracroy</span>
+        <span class="dialogue-text">"Itu tabiat buruk awak. Lambat laun, ia akan menjadi sebab kaki awak disapu dari bawah awak."</span>
+      </div>
+
+      <div class="narrative">
+        Serena mengangkat bahunya, mengadakan pertukaran bersahaja dengan Roswaal.
+        Petra, yang secara sedar mengelak daripada berhubung dengannya, menjadi sedikit kaku apabila ditenung.
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"A-apa dia, Tuan?"</span>
+      </div>
+
+      <div class="dialogue-box box-roswaal">
+        <span class="char-name char-roswaal">Roswaal</span>
+        <span class="dialogue-text">"Janganlah begitu waspada. Saya cuma bimbang awak bersendirian dan awak bekerja terlalu banyak. Di mana Frederica?"</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"…Frederica-neesama telah menyibukkan dirinya untuk masa yang lama dan sekarang sedang berehat. Selepas banyak permintaan, dia akhirnya berehat."</span>
+      </div>
+
+      <div class="narrative">
+        Ia mengingatkannya bahawa Frederica hampir tidak bernafas dan tidur seolah-olah dalam koma.
+      </div>
+
+      <div class="dialogue-box box-roswaal">
+        <span class="char-name char-roswaal">Roswaal</span>
+        <span class="dialogue-text">"Frederica mempunyai rasa tangguuungjawab yang kuat~. Sama sekali dia tidak bermaksud tidak menghormati awak, Petra-kun."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"――Hk, saya dah tahu tu, awak tak perlu bagitahu saya."</span>
+      </div>
+
+      <div class="dialogue-box box-roswaal">
+        <span class="char-name char-roswaal">Roswaal</span>
+        <span class="dialogue-text">"Saya faham. Awak betul. Maaf saya cakap sesuatu yang tak sepatutnya. ――Awak okey?"</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"…Sihir Yang sedang melakukan kerjanya dengan betul."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Buat masa sekarang, saya ingin bekerja lebih sedikit lagi. Adakah awak ingin menghentikan saya?"</span>
+      </div>
+
+      <div class="dialogue-box box-roswaal">
+        <span class="char-name char-roswaal">Roswaal</span>
+        <span class="dialogue-text">"――. Tidak, saya tidak akan hentikan awak. Kita semua mempunyai peluang dalam hidup apabila kita perlu mengatasi alasan dan akal fikiran dengan semangat dan paksaan, dan jika ini masanya untuk awak, Petra-kun, saya tidak akan mengambilnya daripada awak."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"…Saya masih tidak sukakan awak, Tuan."</span>
+      </div>
+
+      <div class="narrative">
+        Petra memalingkan wajahnya daripada Roswaal, yang menutup sebelah mata dan memandangnya dengan mata birunya.
+      </div>
+
+      <div class="dialogue-box box-serena">
+        <span class="char-name char-serena">Serena Dracroy</span>
+        <span class="dialogue-text">"Hubungan tuan-hamba yang menyusahkan. Cara perkara sebegini berlaku, Empayar dan Kerajaan tidaklah begitu berbeza. Bukankah begitu, Jeneral Kelas Kedua Zikr?"</span>
+      </div>
+
+      <div class="dialogue-box box-zikr">
+        <span class="char-name char-zikr">Zikr</span>
+        <span class="dialogue-text">"Dengan Cik Petra yang begitu cerdik pada usianya, tidak mengherankan bahawa dia begitu bersemangat tentang pendidikan Margrave Mathers. Apabila keikhlasan bertemu keikhlasan, saya rasa pertembungan tidak dapat dielakkan."</span>
+      </div>
+
+      <div class="dialogue-box box-serena">
+        <span class="char-name char-serena">Serena Dracroy</span>
+        <span class="dialogue-text">"Aduh, awak ni Jeneral Empayar sepenuhnya. Saya ingatkan awak lelaki yang baik, tapi sebaliknya, awak macam ni. Awak senangkan saya dengan tunjukkan wajah yang saya suka."</span>
+      </div>
+
+      <div class="narrative">
+        Petra mengeluh melihat perbualan antara dua temperamen Empayar yang paling unik itu. ――Sifat Roswaal, apa pun ia, tidak penting. Sekarang dia berhadapan dengan Roswaal, yang telah dielakkannya, tiada apa yang dapat menghalangnya sekarang.
+        Untuk itu, Petra mengetatkan pipinya, dan memandang ke arah Roswaal,
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Apa yang awak rancang nak buat dengan <span class="red-text">Subaru</span>, Tuan?"</span>
+      </div>
+
+      <div class="dialogue-box box-roswaal">
+        <span class="char-name char-roswaal">Roswaal</span>
+        <span class="dialogue-text">"Hmm."</span>
+      </div>
+
+      <div class="dialogue-box box-petra">
+        <span class="char-name char-petra">Petra</span>
+        <span class="dialogue-text">"Tolong jawab."</span>
+      </div>
+
+      <div class="narrative">
+        Soalan Petra adalah lurus, tetapi kurang spesifik.
+        Roswaal melepaskan keluhan kecil apabila ia ditujukan kepadanya. Dia menutup sebelah mata lagi, dan, kali ini, memandang Petra dengan mata kuningnya―― kali ini, dengan pandangan bukan manusia yang Petra tidak suka.
+        <br><br>
+        ――Sifat luar biasa hubungan <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span> memberi kesan yang kuat kepada Petra.
+      </div>
     `,
     14: `
       <h2 class="battle-title">Aldebaran lwn Reinhard</h2>
@@ -641,7 +766,6 @@
         ――Lagipun, cahaya bintang yang berkelip di langit malam sedang jatuh menjunam, mensasarkan tepat ke arah Saint Pedang.
       </div>
 
-      <!-- IMAGE 1: FALLING STAR -->
       <img src="https://witchculttranslation.com/wp-content/uploads/2025/01/9_14_0.png" alt="Al Shario Falling Star" class="scene-image">
 
       <div class="narrative">
@@ -669,7 +793,6 @@
         <span class="dialogue-text">"Perlindungan Suci <span class="highlight">Imbangan Bola</span>."</span>
       </div>
 
-      <!-- BAHAGIAN 2 -->
       <div class="dialogue-box box-dragon">
         <span class="char-name char-dragon">"Aldebaran" (Naga)</span>
         <span class="dialogue-text">"Imbangan... Bola..."</span>
@@ -744,7 +867,7 @@
       </div>
 
       <div class="action">Reinhard menebas nafas itu secara berhadapan.</div>
-
+      
       <div class="narrative">
         Suara Reinhard melimpah dengan kemarahan yang adil, hatinya dipenuhi amarah terhadap percubaan bunuh-membunuh ini.
         <br><br>
@@ -763,7 +886,6 @@
 
       <div class="loop-marker">× × ×</div>
 
-      <!-- BAHAGIAN 3 -->
       <div class="dialogue-box box-reinhard">
         <span class="char-name char-reinhard">???</span>
         <span class="dialogue-text">"<span class="red-text">――Setakat itu sahajalah kamu.</span>"</span>
@@ -887,7 +1009,7 @@
       </div>
 
       <div class="wall-of-text">
-        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
+        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
       </div>
 
       <div class="narrative">
@@ -938,7 +1060,6 @@
 
       <div class="loop-marker">△▼△▼△▼△</div>
 
-      <!-- BAHAGIAN 4 -->
       <div class="narrative">
         Jarak antara kedua-duanya hilang dalam sekelip mata.
       </div>
@@ -1058,10 +1179,8 @@
         <span class="dialogue-text">"<span class="red-text">Tembak!!</span>"</span>
       </div>
 
-      <!-- IMAGE 2: FIRE COMMAND -->
       <img src="https://witchculttranslation.com/wp-content/uploads/2025/01/9_14_1-min.png" alt="Aldebaran Fire Command" class="scene-image">
 
-      <!-- BAHAGIAN 5 -->
       <div class="narrative">
         Magia Railgun kedua ditembak, dan sisik itu menembusi betul-betul di tengah Reinhard.
       </div>
