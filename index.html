@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aqif Suka Baca</title>
+<title>Pembaca Novel Web Re:Zero</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,300&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 40px;
     
     /* ANIMASI PUDAR (FADE) */
@@ -48,10 +48,48 @@
     font-family: 'Cinzel', serif;
     font-size: 4rem;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-shadow: 0 0 20px rgba(0,0,0,0.8);
     letter-spacing: 5px;
     text-transform: uppercase;
+  }
+
+  /* --- SINOPSIS ARC (BARU) --- */
+  .arc-intro {
+    background: rgba(20, 20, 20, 0.85);
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+  }
+
+  .arc-intro h3 {
+    font-family: 'Cinzel', serif;
+    color: #ff4d4d;
+    margin-top: 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .arc-intro p, .arc-intro li {
+    font-family: 'Merriweather', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  .arc-intro ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  .arc-intro li {
+    margin-bottom: 10px;
   }
 
   .search-bar {
@@ -336,6 +374,25 @@
 <div id="main-menu">
   <div class="menu-container">
     <h1 class="phase-title">Fasa 1</h1>
+
+    <div class="arc-intro">
+      <h3>Sinopsis Arc 9</h3>
+      <p>
+        Arc ini berlaku sejurus selepas <span class="red-text">"Bencana Besar"</span> (serangan zombi) di Empayar Vollachia tamat. Fokus utamanya adalah:
+      </p>
+      <ul>
+        <li>
+          <strong>Al Sebagai Musuh Utama:</strong> <span class="red-text">Aldebaran (Al)</span> mendedahkan wajah sebenar dan mengkhianati kem Emilia serta Empayar.
+        </li>
+        <li>
+          <strong>Pertembungan Pengguna Masa:</strong> Ia adalah perlawanan antara <span class="red-text">Natsuki Subaru</span> vs. <span class="red-text">Aldebaran</span>. Kedua-duanya mempunyai kebolehan untuk mengulang masa (<span class="red-text">Return by Death</span> vs. <span class="red-text">Wilayah Al</span>), menjadikan ia satu pertempuran strategi yang sangat rumit.
+        </li>
+        <li>
+          <strong>Al vs. Dunia:</strong> Al bersedia menentang sesiapa sahaja, termasuk orang terkuat seperti <span class="red-text">Reinhard van Astrea</span>, demi mencapai matlamat rahsianya (yang dikaitkan dengan menyelamatkan <span class="red-text">Satella</span>).
+        </li>
+      </ul>
+    </div>
+
     <input type="text" class="search-bar" id="searchInput" placeholder="Cari Bab..." onkeyup="filterChapters()">
     
     <ul class="chapter-list" id="chapterList">
@@ -508,7 +565,7 @@
       <div class="narrative">Mengeluh, Garfiel mengetap taring tajamnya. Mereka telah kehilangan seorang wanita yang kuat, benar-benar kuat.</div>
       <div class="dialogue-box box-olbart"><span class="char-name char-olbart">???</span><span class="dialogue-text">"…Aduhai, beraninya orang muda tinggalkan orang tua di belakang serta-merta. Tak boleh nak tolong betapa menjijikkannya aspek tu."</span></div>
       <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Hah, tu sindiran ke, atuk? Cuma sebab diri aku yang hebat ni tak boleh sembuhkan tangan kau…"</span></div>
-      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Kakakakka! Aku takkan kata tu sindiran. Biar aku bagitahu kau, sumber kekuatan aku selama berdekad-dekad ni adalah sentiasa bercakap tentang iri hati dan cemburu aku, tahu?"</span></div>
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Kakakakka! Aku takkan kata tu sindiran. Biar aku bagitahu kau, sumber kekuatan aku selama berdekad-dekad ni adalah sentiasa bercakap tentang iri hati dan cemburu aku, tahu? Kata yang aku iri hati bukan tipu atau apa-apa macam tu. Ahh, aku dipenuhi dengan cemburu."</span></div>
       <div class="dialogue-box box-groovy"><span class="char-name char-groovy">???</span><span class="dialogue-text">"――Diamlah, orang tua sialan! Berhenti kacau lelaki yang buat banyak kerja walaupun dia penat gila!"</span></div>
       <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Oh, takutnya takutnya. Itu bukan semangat seseorang yang separuh mati."</span></div>
       <div class="narrative">Satu susuk tubuh yang terbaring di atas katil di belakang bilik menjerit dengan marah, dan Olbart ketawa mendengarnya dengan bunyi garau yang rendah.</div>
@@ -1394,7 +1451,7 @@
       </div>
 
       <div class="wall-of-text">
-        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
+        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
       </div>
 
       <div class="narrative">
@@ -1714,4 +1771,3 @@
 
 </body>
 </html>
-
