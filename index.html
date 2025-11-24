@@ -17,7 +17,7 @@
       SKRIN 1: MENU UTAMA (Senarai Bab)
      ========================================= */
   #main-menu {
-    /* IMEJ LATAR BELAKANG: Aldebaran & Menara */
+    /* IMEJ LATAR BELAKANG */
     background: linear-gradient(to bottom, rgba(10,10,15,0.4), rgba(10,10,15,0.95)), 
                 url('https://witchculttranslation.com/wp-content/uploads/2023/08/2408_garcar-min.jpg');
     background-size: cover;
@@ -115,7 +115,7 @@
     min-width: 80px;
   }
 
-  /* Highlight untuk Bab Penting (Bab 14) */
+  /* Highlight untuk Bab Penting */
   .chapter-item.special {
     border: 1px solid rgba(255, 77, 77, 0.3);
     background: rgba(30, 10, 10, 0.9);
@@ -296,62 +296,38 @@
 
   /* --- WARNA WATAK --- */
   
-  /* Reinhard & Al */
-  .reinhard { color: #87CEEB; text-shadow: 0 0 5px rgba(135, 206, 235, 0.3); }
-  .box-reinhard { border-left-color: #87CEEB; }
-  .char-reinhard { color: #87CEEB; }
+  /* Main */
+  .reinhard { color: #87CEEB; } .box-reinhard { border-left-color: #87CEEB; } .char-reinhard { color: #87CEEB; }
+  .aldebaran { color: #ff4d4d; } .box-al { border-left-color: #ff4d4d; } .char-aldebaran { color: #ff4d4d; }
+  .dragon-al { color: #ff8c00; } .box-dragon { border-left-color: #ff8c00; } .char-dragon { color: #ff8c00; }
 
-  .aldebaran { color: #ff4d4d; text-shadow: 0 0 5px rgba(255, 77, 77, 0.3); }
-  .box-al { border-left-color: #ff4d4d; }
-  .char-aldebaran { color: #ff4d4d; }
+  /* Bab 1 */
+  .box-vincent { border-left-color: #9370db; } .char-vincent { color: #9370db; }
+  .box-petra { border-left-color: #ffb74d; } .char-petra { color: #ffb74d; }
+  .box-zikr { border-left-color: #8d6e63; } .char-zikr { color: #a1887f; }
+  .box-serena { border-left-color: #d81b60; } .char-serena { color: #e91e63; }
+  .box-roswaal { border-left-color: #3f51b5; } .char-roswaal { color: #7986cb; }
 
-  .dragon-al { color: #ff8c00; text-shadow: 0 0 5px rgba(255, 140, 0, 0.3); }
-  .box-dragon { border-left-color: #ff8c00; }
-  .char-dragon { color: #ff8c00; }
+  /* Bab 2 */
+  .box-garfiel { border-left-color: #f1c40f; } .char-garfiel { color: #f1c40f; }
+  .box-olbart { border-left-color: #8B0000; } .char-olbart { color: #cd5c5c; }
+  .box-groovy { border-left-color: #556b2f; } .char-groovy { color: #6b8e23; }
+  .box-moguro { border-left-color: #708090; } .char-moguro { color: #b0c4de; }
+  .box-anastasia { border-left-color: #d7bde2; } .char-anastasia { color: #d7bde2; }
+  .box-otto { border-left-color: #a2d9ce; } .char-otto { color: #a2d9ce; }
+  .box-berstetz { border-left-color: #2c3e50; } .char-berstetz { color: #5d6d7e; }
+  .box-echidna { border-left-color: #ffffff; } .char-echidna { color: #ffffff; }
+  .box-cecilus { border-left-color: #0000ff; } .char-cecilus { color: #0000ff; }
+  .box-ram { border-left-color: #ffb6c1; } .char-ram { color: #ffb6c1; }
+  .box-mizelda { border-left-color: #a0522d; } .char-mizelda { color: #d2691e; }
+  .box-flop { border-left-color: #f0e68c; } .char-flop { color: #khaki; }
+  .box-taritta { border-left-color: #8b4513; } .char-taritta { color: #cd853f; }
+  .box-kuna { border-left-color: #deb887; } .char-kuna { color: #burlywood; }
 
-  /* Bab 1 Characters */
-  .box-vincent { border-left-color: #9370db; }
-  .char-vincent { color: #9370db; text-shadow: 0 0 5px rgba(147, 112, 219, 0.3); }
-
-  .box-petra { border-left-color: #ffb74d; }
-  .char-petra { color: #ffb74d; text-shadow: 0 0 5px rgba(255, 183, 77, 0.3); }
-
-  .box-zikr { border-left-color: #8d6e63; }
-  .char-zikr { color: #a1887f; }
-
-  .box-serena { border-left-color: #d81b60; }
-  .char-serena { color: #e91e63; text-shadow: 0 0 5px rgba(233, 30, 99, 0.3); }
-
-  .box-roswaal { border-left-color: #3f51b5; }
-  .char-roswaal { color: #7986cb; text-shadow: 0 0 5px rgba(63, 81, 181, 0.3); }
-
-  /* Bab 2 Characters */
-  .box-garfiel { border-left-color: #f1c40f; } /* Emas Kasar */
-  .char-garfiel { color: #f1c40f; text-shadow: 0 0 5px rgba(241, 196, 15, 0.3); }
-
-  .box-olbart { border-left-color: #8B0000; } /* Merah Darah Tua */
-  .char-olbart { color: #cd5c5c; }
-
-  .box-groovy { border-left-color: #556b2f; } /* Hijau Zaitun Gelap */
-  .char-groovy { color: #6b8e23; }
-
-  .box-moguro { border-left-color: #708090; } /* Kelabu Besi */
-  .char-moguro { color: #b0c4de; text-shadow: 0 0 5px rgba(176, 196, 222, 0.3); }
-
-  .box-anastasia { border-left-color: #d7bde2; } /* Ungu Pucat */
-  .char-anastasia { color: #d7bde2; text-shadow: 0 0 5px rgba(215, 189, 226, 0.3); }
-
-  .box-otto { border-left-color: #a2d9ce; } /* Hijau Pudar */
-  .char-otto { color: #a2d9ce; }
-
-  .box-berstetz { border-left-color: #2c3e50; } /* Biru Gelap Pucat */
-  .char-berstetz { color: #5d6d7e; }
-
-  .box-echidna { border-left-color: #ffffff; } /* Putih */
-  .char-echidna { color: #ffffff; text-shadow: 0 0 5px rgba(255,255,255,0.5); }
-
-  .box-cecilus { border-left-color: #0000ff; } /* Biru Petir */
-  .char-cecilus { color: #0000ff; text-shadow: 0 0 5px rgba(0, 0, 255, 0.5); }
+  /* Bab 3 */
+  .box-rem { border-left-color: #87CEFA; } .char-rem { color: #87CEFA; text-shadow: 0 0 5px rgba(135, 206, 250, 0.3); }
+  .box-katya { border-left-color: #ffcccb; } .char-katya { color: #ffcccb; text-shadow: 0 0 5px rgba(255, 204, 203, 0.3); }
+  .box-youth { border-left-color: #a9a9a9; } .char-youth { color: #c0c0c0; }
 
 </style>
 </head>
@@ -375,7 +351,12 @@
         </div>
       </li>
 
-      <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 3:</span> Bagi Setiap Mereka yang Meratapimu</div></li>
+      <li class="chapter-item" onclick="openChapter(3)">
+        <div class="chapter-link">
+          <span class="num">Bab 3:</span> Bagi Setiap Mereka yang Meratapimu
+        </div>
+      </li>
+
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 4:</span> Si Dungu</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 5:</span> Sembilan Ratus Tiga Puluh Satu Pukulan</div></li>
       <li class="chapter-item"><div class="chapter-link"><span class="num">Bab 6:</span> Keberangkatan</div></li>
@@ -412,859 +393,648 @@
   const chapters = {
     1: `
       <h2 class="battle-title">Bab 1: Pasca Bencana</h2>
-      
       <div class="narrative">
         ――Subuh menyinsing pada malam pertama sejak <span class="red-text">Bencana Besar</span> yang menggoncang entiti Empayar Vollachia telah berakhir.
         Ancaman mayat hidup yang membinasakan seluruh Empayar telah dielakkan melalui penyatuan rakyat empayar, yang mengabdikan diri kepada undang-undang besi dan darah; di barisan hadapan Serigala Pedang Vollachia itu, adalah susuk tubuh agung puncak mereka, <span class="red-text">Vincent Vollachia</span>, yang telah bertukar pukulan secara langsung menentang ketua musuh dengan Pedang Yang diangkat tinggi.
       </div>
-      
       <div class="narrative">
         Berpusat di sekitar Ibu Kota Diraja Lupugana, kerosakan telah sampai ke setiap bandar utama Vollachia, seperti Bandar Berkubu Garkla, Glarasia, Bandar Besi dan Darah, Bandar Iblis Chaosflame, dan Bandar Lautan Awan Mezoreia; namun, setiap bandar telah berjaya mengelak daripada jatuh ke dalam keadaan bencana.
         Oleh itu, walaupun ditinggalkan dengan parut besar, momentum kemenangan adalah apa yang akhirnya menyelubungi Empayar Vollachia.
       </div>
-
       <div class="narrative">
         Berita kematian seorang wanita tunggal yang telah menyumbang besar kepada kemenangan Empayar Vollachia dalam pertempuran menentang <span class="red-text">Bencana Besar</span>, yang telah hidup seperti api dan menawan ramai hati――.
         Di dalam sebuah bilik di Bandar Berkubu Garkla, yang berfungsi sebagai ibu pejabat sementara menggantikan Ibu Kota Diraja yang musnah, Maharaja <span class="red-text">Vincent Vollachia</span> kebetulan mendengar berita kematian itu, mewujudkan kesunyian yang sangat tidak seperti dirinya, yang akan bertindak balas terhadap semua perkara dalam sekelip mata pertimbangan, dan selepas menghabiskan sedikit masa dengan kepalanya menunduk――,
       </div>
-
       <div class="dialogue-box box-vincent">
         <span class="char-name char-vincent">Vincent Vollachia</span>
         <span class="dialogue-text">"――Beta mengerti."</span>
       </div>
-
-      <div class="narrative">
-        Kata-kata ringkas itu, adalah semua yang dia bicarakan.
-      </div>
-
+      <div class="narrative">Kata-kata ringkas itu, adalah semua yang dia bicarakan.</div>
       <div class="loop-marker">△▼△▼△▼△</div>
-
       <div class="narrative">
         Pertarungan menentang <span class="red-text">Bencana Besar</span> telah berakhir, dan orang ramai mula bergerak untuk menuntut semula kehidupan mereka.
         Vollachia mengalami kemusnahan teruk akibat tentera mayat hidup semasa Bencana Besar yang tidak pernah berlaku sebelum ini, tetapi penduduk alam itu dengan tegas mengangkat kepala mereka tinggi, berdiri semula satu demi satu semasa mereka mula membina semula tanah itu.
         Pemandangan rakyat Empayar itu hanya membanjiri perasaan <span class="red-text">Petra Leyte</span>.
       </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Walaupun, saya tak begitu sukakan Empayar ni sangat…"</span>
-      </div>
-
-      <div class="narrative">
-        Setelah berkata demikian, dengan perasaan bercampur baur, Petra berdiri di jalan-jalan Bandar Berkubu itu.
-        Sebahagian besar sebab Petra tidak menyukai Empayar adalah kemarahan bahawa ini adalah tempat di mana rakan berharganya dan minat cinta Petra, <span class="red-text">Natsuki Subaru</span>, telah dibawa pergi secara paksa.
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"――<span class="red-text">Subaru.</span>"</span>
-      </div>
-
-      <div class="narrative">
-        Petra, yang di khalayak ramai memanggilnya dengan gelaran "Sama", bimbang akan lelaki yang sudah pasti telah melakukan lebih banyak untuk Empayar daripada orang lain, malah lebih daripada Maharaja sendiri.
-        Kerana Subaru adalah orang yang begitu baik dan penuh belas kasihan, Petra amat risau tentang betapa hatinya mungkin telah haus di Empayar yang penuh dengan perkara-perkara mengerikan ini.
-        Walaupun begitu, paku terakhir di dalam keranda itu terlalu berat untuk Subaru, yang mempunyai begitu banyak perkara untuk dirisaukan.
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"<span class="red-text">Priscilla Barielle-sama…</span>"</span>
-      </div>
-
-      <div class="narrative">
-        Itu adalah nama wanita yang telah menyebabkan luka yang amat besar, mendalam, dan menyakitkan di hati Subaru.
-        Disebabkan kedudukan Petra, dia tidak pernah bertukar sepatah kata pun dengannya. Namun, peluang itu ada.
-        Dengan tidak berinteraksi dengan Priscilla, Petra tidak mempunyai hak untuk meratapinya―― untuk meratapi kematian <span class="red-text">Priscilla Barielle</span>, dan, oleh itu, mendapati sukar untuk bersimpati dengan Subaru dan Emilia.
-        Ia akan menjadi sukar untuk memberitahu dua orang yang sangat patah hati bahawa dia memahami apa yang mereka lalui.
-        Ini adalah sesuatu yang amat mengecewakan bagi Petra sekarang――.
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">???</span>
-        <span class="dialogue-text">"――Helo, helo, Cik Petra, adakah awak bersendirian?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Oh, Zikr-san."</span>
-      </div>
-
-      <div class="narrative">
-        Petra, yang telah mengetap bibirnya dan menegangkan pipinya, mendongak mendengar panggilan itu, dan hadir di situ ialah <span class="red-text">Zikr Osman</span> dengan gaya rambut bulat dan lebat.
-        Sebagai Jeneral Empayar, Zikr memainkan peranan penting dalam pertempuran menentang Bencana Besar, dan dia adalah orang yang sangat disenangi yang melayan Petra seperti orang biasa tanpa bersikap angkuh tentang kedudukannya.
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Saya telah selesai menyusun semula semua tentera, jadi saya akhirnya turun untuk memeriksa kerosakan sendiri. Saya telah mendengar laporan, tetapi saya perlu melihatnya sendiri."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Begitu rupanya. Saya tidak tahu butiran penyusunan semula itu… tapi syabas."</span>
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Terima kasih atas keprihatinan awak. Walau bagaimanapun, peranan yang saya dapat mainkan adalah tidak penting berbanding mereka yang bekerja begitu bertenaga, seperti Jeneral Kelas Pertama Goz dan Jeneral Kelas Pertama Kafma."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Saya tidak rasa awak boleh kata kerja keras awak tidak penting sebab salah seorang daripada kamu bekerja lebih keras daripada yang lain."</span>
-      </div>
-
-      <div class="narrative">
-        Zikr, kelihatan malu, menjadi lebih malu lagi dengan kenyataan Petra.
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Jika ada sebarang ganjaran yang boleh didapati, pemandangan ini, keputusan ini, itulah dia. Duli Yang Maha Mulia Maharaja melarikan diri ke Timur, dan saya kebetulan berada di Bandar Kubu atas satu misi. Terima kasih kepada kebetulan ini, saya mendapat penghormatan untuk menemani Duli Yang Maha Mulia dan hadir pada saat ini. Saya sememangnya diberkati."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"…Saya tak pasti. Zikr-san, bukankah awak layak mendapat lebih banyak pujian?"</span>
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Adakah awak tidak faham? Kalau begitu, Cik Petra, tak bolehkah awak fikirkan seseorang yang disukai dalam fikiran awak yang cerdas itu?"</span>
-      </div>
-
-      <div class="narrative">
-        Petra mengeluarkan bunyi "hah" pada cadangan mengejut itu. Dalam fikirannya, apa yang dia samar-samar boleh ingat hanyalah <span class="red-text">Natsuki Subaru</span>.
-        Zikr mengangguk dalam-dalam sebagai tindak balas kepada Petra.
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Seseorang yang disukai itu akan tersenyum kepada awak hasil daripada perbuatan awak. Adakah itu tidak cukup untuk membuatkan awak rasa dihargai?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Itu… hmm, ya."</span>
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Ia adalah sama. Saya adalah Jeneral Empayar Vollachia, tetapi orang yang Cik Petra fikirkan itu mungkin jauh lebih hebat daripada saya, sekurang-kurangnya pada pendapat saya. Jadi, ini sudah memadai."</span>
-      </div>
-
-      <div class="narrative">
-        Begitulah kata Zikr, dengan sebelah mata tertutup dan tangannya memegang dada sambil tersenyum kepada Petra.
-        Sebab itulah Petra juga secara senyap menundukkan kepalanya dan tidak dapat berkata apa-apa――,
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">???</span>
-        <span class="dialogue-text">"――Walau bagaimanapun, Duli Yang Maha Mulia Vincent menyokong sepenuhnya ganjaran dan hukuman mengikut merit. Saya tidak setuju orang yang telah melakukan perkhidmatan berjasa sedemikian berkata perkara yang tidak mementingkan diri, kerana ia menyukarkan askar untuk meluahkan pendapat mereka."</span>
-      </div>
-
-      <div class="narrative">
-        Kemudian, sebaliknya Petra, yang telah menutup mulutnya, satu suara menyampuk dari arah yang berbeza. Petra dan Zikr menoleh untuk melihat <span class="red-text">Serena</span> berjalan perlahan ke arah mereka.
-        Serena Dracroy, dengan parut putih yang tersendiri di pipinya yang bagaimanapun tidak mencacatkan kecantikan bermaruahnya, ditemani oleh kenalannya <span class="red-text">Roswaal</span> di sebelahnya, yang membuatkan bibir Petra mencebik.
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">Serena Dracroy</span>
-        <span class="dialogue-text">"Seperti biasa, macam mana awak boleh sangat tidak disukai oleh seseorang yang nampak cukup tua untuk jadi anak perempuan awak? Awak tak boleh merungut tentang ditikam dari belakang oleh seseorang yang secara terbuka menunjukkan niat memberontak."</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Saya tidak akan sesekali mengupah kanak-kanak yang tidak boleh memikirkan tentang akiiiibatnya~. Tidak kira apa persepsi awak terhadap saya, saya hanya menggaji orang yang cekap seperti Petra-kun, Otto-kun, dan seumpamanya."</span>
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">Serena Dracroy</span>
-        <span class="dialogue-text">"Itu tabiat buruk awak. Lambat laun, ia akan menjadi sebab kaki awak disapu dari bawah awak."</span>
-      </div>
-
-      <div class="narrative">
-        Serena mengangkat bahunya, mengadakan pertukaran bersahaja dengan Roswaal.
-        Petra, yang secara sedar mengelak daripada berhubung dengannya, menjadi sedikit kaku apabila ditenung.
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"A-apa dia, Tuan?"</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Janganlah begitu waspada. Saya cuma bimbang awak bersendirian dan awak bekerja terlalu banyak. Di mana Frederica?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"…Frederica-neesama telah menyibukkan dirinya untuk masa yang lama dan sekarang sedang berehat. Selepas banyak permintaan, dia akhirnya berehat."</span>
-      </div>
-
-      <div class="narrative">
-        Ia mengingatkannya bahawa Frederica hampir tidak bernafas dan tidur seolah-olah dalam koma.
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Frederica mempunyai rasa tangguuungjawab yang kuat~. Sama sekali dia tidak bermaksud tidak menghormati awak, Petra-kun."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"――Hk, saya dah tahu tu, awak tak perlu bagitahu saya."</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Saya faham. Awak betul. Maaf saya cakap sesuatu yang tak sepatutnya. ――Awak okey?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"…Sihir Yang sedang melakukan kerjanya dengan betul."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Buat masa sekarang, saya ingin bekerja lebih sedikit lagi. Adakah awak ingin menghentikan saya?"</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"――. Tidak, saya tidak akan hentikan awak. Kita semua mempunyai peluang dalam hidup apabila kita perlu mengatasi alasan dan akal fikiran dengan semangat dan paksaan, dan jika ini masanya untuk awak, Petra-kun, saya tidak akan mengambilnya daripada awak."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"…Saya masih tidak sukakan awak, Tuan."</span>
-      </div>
-
-      <div class="narrative">
-        Petra memalingkan wajahnya daripada Roswaal, yang menutup sebelah mata dan memandangnya dengan mata birunya.
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">Serena Dracroy</span>
-        <span class="dialogue-text">"Hubungan tuan-hamba yang menyusahkan. Cara perkara sebegini berlaku, Empayar dan Kerajaan tidaklah begitu berbeza. Bukankah begitu, Jeneral Kelas Kedua Zikr?"</span>
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"Dengan Cik Petra yang begitu cerdik pada usianya, tidak mengherankan bahawa dia begitu bersemangat tentang pendidikan Margrave Mathers. Apabila keikhlasan bertemu keikhlasan, saya rasa pertembungan tidak dapat dielakkan."</span>
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">Serena Dracroy</span>
-        <span class="dialogue-text">"Aduh, awak ni Jeneral Empayar sepenuhnya. Saya ingatkan awak lelaki yang baik, tapi sebaliknya, awak macam ni. Awak senangkan saya dengan tunjukkan wajah yang saya suka."</span>
-      </div>
-
-      <div class="narrative">
-        Petra mengeluh melihat perbualan antara dua temperamen Empayar yang paling unik itu. ――Sifat Roswaal, apa pun ia, tidak penting. Sekarang dia berhadapan dengan Roswaal, yang telah dielakkannya, tiada apa yang dapat menghalangnya sekarang.
-        Untuk itu, Petra mengetatkan pipinya, dan memandang ke arah Roswaal,
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Apa yang awak rancang nak buat dengan <span class="red-text">Subaru</span>, Tuan?"</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Hmm."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Tolong jawab."</span>
-      </div>
-
-      <div class="narrative">
-        Soalan Petra adalah lurus, tetapi kurang spesifik.
-        Roswaal melepaskan keluhan kecil apabila ia ditujukan kepadanya. Dia menutup sebelah mata lagi, dan, kali ini, memandang Petra dengan mata kuningnya―― kali ini, dengan pandangan bukan manusia yang Petra tidak suka.
-        <br><br>
-        ――Sifat luar biasa hubungan <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span> memberi kesan yang kuat kepada Petra.
-      </div>
-
-      <div class="narrative">
-        Petra mengesyaki bahawa ini adalah sesuatu yang berbeza daripada kelakuan buruk <span class="red-text">Roswaal</span> di kampung Arlam, kampung halaman <span class="red-text">Petra</span>, atau <span class="red-text">Sanctuary</span> tempat asal <span class="red-text">Frederica</span> dan <span class="red-text">Garfiel</span>―― sesuatu yang <span class="red-text">Subaru</span> dan yang lain hampir bertoleransi sepenuhnya.
-      </div>
-
-      <div class="narrative">
-        Jika seseorang melihat kesalahan <span class="red-text">Roswaal</span> dan siapa yang memaafkannya, keadaannya sama bagi <span class="red-text">Subaru</span>, <span class="red-text">Emilia</span>, dan <span class="red-text">Frederica</span>, yang terlalu pemaaf. Kemudian ada <span class="red-text">Beatrice</span> dan <span class="red-text">Garfiel</span>, yang berkata mereka marah, diikuti oleh <span class="red-text">Ram</span>, yang berada dalam kedudukan unik, dan <span class="red-text">Petra</span> dan <span class="red-text">Otto</span>, yang jelas tidak memaafkan <span class="red-text">Roswaal</span>.
-      </div>
-
-      <div class="narrative">
-        Sememangnya, <span class="red-text">Petra</span> dan <span class="red-text">Otto</span> sentiasa merasakan ketegangan apabila berurusan dengan <span class="red-text">Roswaal</span>. Sudah tentu, mereka tidak mahu membuat kacau, jadi ketegangan itu umpama panggang senyap di atas api. Apa yang dia tidak suka tentang <span class="red-text">Roswaal</span> ialah dia tidak pernah mengubah ekspresinya semasa dipanggang sedemikian rupa.
-      </div>
-
-      <div class="narrative">
-        Walau bagaimanapun, api biru yang <span class="red-text">Petra</span> dan <span class="red-text">Otto</span> tujukan kepada <span class="red-text">Roswaal</span> dan haba di udara antara <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span> nampaknya berbeza secara asas.
-        Ia adalah cara yang teruk untuk mengatakannya, <span class="red-text">Petra</span> tidak mahu mengakuinya. Tetapi dia yakin.
-      </div>
-
-      <div class="narrative">
-        Antara <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span>, terdapat satu rahsia yang tidak disertakan oleh <span class="red-text">Petra</span> mahupun orang lain. Rahsia yang dikongsi itu adalah sumber yang menimbulkan jenis ketegangan yang berbeza.
-        Tambahan pula, akibat daripada rahsia itu pasti, mungkin, akan menyebabkan malang kepada <span class="red-text">Subaru</span>.
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Apa yang saya rancang nak buat dengan <span class="red-text">Subaru</span>, ya~?"</span>
-      </div>
-
-      <div class="narrative">
-        Pada pandangan bermusuhan <span class="red-text">Petra</span>, <span class="red-text">Roswaal</span> bergumam dengan suara yang agak garau.
-        Dia merasakan tiada suasana penipuan dan ejekan biasa yang tersimpan di dalamnya. Walau bagaimanapun, walaupun tanpa suasana badut sebegitu, dia tidak boleh mempercayai <span class="red-text">Roswaal</span> begitu sahaja.
-        Seolah-olah untuk mengesahkan perasaan <span class="red-text">Petra</span>, <span class="red-text">Roswaal</span>, dengan sebelah mata masih tertutup,
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"<span class="red-text">Petra-kun</span>, apa yang awak rasa perkara yang betul untuk saya buat~?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"…Awak sedang mengejek saya ke?"</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Tak, tak, bukan begitu maksud saya. Secara jujur, saya agak buntu~... Pendirian macam mana yang patut saya ambil, mengenai <span class="red-text">Subaru-kun</span>?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"――――"</span>
-      </div>
-
-      <div class="narrative">
-        Semasa dia berkata demikian, <span class="red-text">Roswaal</span> mengangkat sedikit kedua-dua belah tangannya dan menyalakan hujung jarinya dengan cahaya warna yang berbeza. Terapung merah di tangan kanannya dan biru di sebelah kirinya, dia bersungguh-sungguh mempertimbangkan langkah seterusnya.
-        Merah dan biru, ke arah mana pun masing-masing memimpin, <span class="red-text">Petra</span> tidak pasti jalan mana yang lebih baik untuknya―― tidak, untuk orang-orang yang penting baginya.
-      </div>
-
-      <div class="narrative">
-        Walaupun dia tidak pasti, jika ada apa-apa yang <span class="red-text">Petra</span> boleh lakukan, ia hanyalah satu perkara.
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Kalau…"</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Hmm?"</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Kalau awak menyebabkan <span class="red-text">Subaru</span> sakit lagi, kalau awak menyebabkan dia sedih lagi, saya takkan maafkan awak, Tuan... Tak, saya pasti akan buat awak menyesal."</span>
-      </div>
-
-      <div class="narrative">
-        Tidak memaafkannya tidak akan menyakitkan <span class="red-text">Roswaal</span> dalam apa cara sekalipun. Selepas berkhidmat kepadanya selama setahun setengah, dia faham itu.
-        Inilah sebabnya, memikirkan kembali masa lalu setahun setengah itu sekeras yang dia boleh, <span class="red-text">Petra</span> mengatakan satu perkara yang <span class="red-text">Roswaal</span> paling benci.
-        Ya, dia akan membuatnya menyesal walau apa pun. Atas sebab itu――,
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Apa pun yang awak nak buat, apa pun yang awak rancang nak buat, Tuan, saya akan halang dengan apa cara sekalipun."</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"――――"</span>
-      </div>
-
-      <div class="narrative">
-        Seketika, kesunyian lahir antara <span class="red-text">Petra</span> dan <span class="red-text">Roswaal</span>.
-        <span class="red-text">Petra</span> menumpukan seluruh kekuatannya untuk menegangkan pipinya, berniat untuk membuat wajah paling tegas yang pernah dia buat dalam sejarah dirinya yang comel. Sebagai tindak balas kepada pendekatan langsung <span class="red-text">Petra</span>, <span class="red-text">Roswaal</span> terdiam.
-        Tidak jelas sejauh mana wajah tegas <span class="red-text">Petra</span> menyumbang kepada perenungannya dalam saat kesunyian itu.
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"…Itu pastinya menyusahkan~. Awak nampaknya lebih disayangi daripada saya."</span>
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"…Bila awak kata saya disayangi, oleh apa sebenarnya?"</span>
-      </div>
-
-      <div class="dialogue-box box-roswaal">
-        <span class="char-name char-roswaal">Roswaal</span>
-        <span class="dialogue-text">"Sesuatu yang saya dah nekad untuk lawan, tapi tak pernah berjaya menang, sejenis kuasa pelik yang macam tu."</span>
-      </div>
-
-      <div class="narrative">
-        Dengan mengangkat bahunya <span class="red-text">Roswaal</span> sekali lagi menyatakan sesuatu di luar pemahaman <span class="red-text">Petra</span>. Tetapi, apa yang mengeruhkan wajahnya semasa dia menggumamkan ini membuatkan <span class="red-text">Petra</span> berfikir ia bukan omong kosong semata-mata.
-        Memang, <span class="red-text">Roswaal</span> sedang berhadapan dengan rasa tidak berdaya, sesuatu yang dia sedar sepenuhnya bahawa dia tidak boleh menang melawannya. Walaupun dia diberitahu bahawa dia disayangi sebegitu, ia tidak begitu masuk akal bagi <span class="red-text">Petra</span>.
-      </div>
-
-      <div class="narrative">
-        <span class="red-text">Petra</span> hanya mahu disayangi oleh orang yang dia cintai.
-        Di samping itu, dia mahu orang tersayangnya gembira sebaik mungkin dengan senyuman di wajah mereka.
-        Sebab itu――,
-      </div>
-
-      <div class="dialogue-box box-petra">
-        <span class="char-name char-petra">Petra</span>
-        <span class="dialogue-text">"Saya nak <span class="red-text">Emilia-neesama</span> dan <span class="red-text">Subaru</span> tersenyum."</span>
-      </div>
-
-      <div class="narrative">
-        <span class="red-text">Petra</span> menepuk dadanya dengan kuat dan menggumamkan kata-kata itu seolah-olah dalam doa.
-        Dia sangat berharap agar semua doa ini akan tergantung seperti awan di atas mereka yang dia cintai, melindungi mereka daripada kesusahan yang sebaliknya akan turun ke atas mereka seperti sinaran matahari.
-      </div>
-
-      <div class="narrative">
-        ――Di sebelah pertukaran <span class="red-text">Petra</span> dan <span class="red-text">Roswaal</span>, melihat tuan dan hamba itu membengkak dengan ketegangan yang membara, <span class="red-text">Serena</span> melemparkan senyuman kepada <span class="red-text">Zikr</span>.
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">Serena</span>
-        <span class="dialogue-text">"Apa pendapat awak? Orang-orang Kerajaan pun tunjukkan potensi yang agak baik, kan? Agak rumit dan misteri, macam yang saya suka."</span>
-      </div>
-
-      <div class="dialogue-box box-zikr">
-        <span class="char-name char-zikr">Zikr</span>
-        <span class="dialogue-text">"…Ia cantik bila awak senyum macam tu, High Countess, tapi saya tak boleh kata ia citarasa yang baik."</span>
-      </div>
-
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Walaupun, saya tak begitu sukakan Empayar ni sangat…"</span></div>
+      <div class="narrative">Setelah berkata demikian, dengan perasaan bercampur baur, Petra berdiri di jalan-jalan Bandar Berkubu itu. Sebahagian besar sebab Petra tidak menyukai Empayar adalah kemarahan bahawa ini adalah tempat di mana rakan berharganya dan minat cinta Petra, <span class="red-text">Natsuki Subaru</span>, telah dibawa pergi secara paksa.</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"――<span class="red-text">Subaru.</span>"</span></div>
+      <div class="narrative">Petra, yang di khalayak ramai memanggilnya dengan gelaran "Sama", bimbang akan lelaki yang sudah pasti telah melakukan lebih banyak untuk Empayar daripada orang lain, malah lebih daripada Maharaja sendiri. Kerana Subaru adalah orang yang begitu baik dan penuh belas kasihan, Petra amat risau tentang betapa hatinya mungkin telah haus di Empayar yang penuh dengan perkara-perkara mengerikan ini. Walaupun begitu, paku terakhir di dalam keranda itu terlalu berat untuk Subaru, yang mempunyai begitu banyak perkara untuk dirisaukan.</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"<span class="red-text">Priscilla Barielle-sama…</span>"</span></div>
+      <div class="narrative">Itu adalah nama wanita yang telah menyebabkan luka yang amat besar, mendalam, dan menyakitkan di hati Subaru. Disebabkan kedudukan Petra, dia tidak pernah bertukar sepatah kata pun dengannya. Namun, peluang itu ada. Dengan tidak berinteraksi dengan Priscilla, Petra tidak mempunyai hak untuk meratapinya―― untuk meratapi kematian <span class="red-text">Priscilla Barielle</span>, dan, oleh itu, mendapati sukar untuk bersimpati dengan Subaru dan Emilia. Ia akan menjadi sukar untuk memberitahu dua orang yang sangat patah hati bahawa dia memahami apa yang mereka lalui. Ini adalah sesuatu yang amat mengecewakan bagi Petra sekarang――.</div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">???</span><span class="dialogue-text">"――Helo, helo, Cik Petra, adakah awak bersendirian?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Oh, Zikr-san."</span></div>
+      <div class="narrative">Petra, yang telah mengetap bibirnya dan menegangkan pipinya, mendongak mendengar panggilan itu, dan hadir di situ ialah <span class="red-text">Zikr Osman</span> dengan gaya rambut bulat dan lebat. Sebagai Jeneral Empayar, Zikr memainkan peranan penting dalam pertempuran menentang Bencana Besar, dan dia adalah orang yang sangat disenangi yang melayan Petra seperti orang biasa tanpa bersikap angkuh tentang kedudukannya.</div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Saya telah selesai menyusun semula semua tentera, jadi saya akhirnya turun untuk memeriksa kerosakan sendiri. Saya telah mendengar laporan, tetapi saya perlu melihatnya sendiri."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Begitu rupanya. Saya tidak tahu butiran penyusunan semula itu… tapi syabas."</span></div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Terima kasih atas keprihatinan awak. Walau bagaimanapun, peranan yang saya dapat mainkan adalah tidak penting berbanding mereka yang bekerja begitu bertenaga, seperti Jeneral Kelas Pertama Goz dan Jeneral Kelas Pertama Kafma."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Saya tidak rasa awak boleh kata kerja keras awak tidak penting sebab salah seorang daripada kamu bekerja lebih keras daripada yang lain."</span></div>
+      <div class="narrative">Zikr, kelihatan malu, menjadi lebih malu lagi dengan kenyataan Petra.</div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Jika ada sebarang ganjaran yang boleh didapati, pemandangan ini, keputusan ini, itulah dia. Duli Yang Maha Mulia Maharaja melarikan diri ke Timur, dan saya kebetulan berada di Bandar Kubu atas satu misi. Terima kasih kepada kebetulan ini, saya mendapat penghormatan untuk menemani Duli Yang Maha Mulia dan hadir pada saat ini. Saya sememangnya diberkati."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"…Saya tak pasti. Zikr-san, bukankah awak layak mendapat lebih banyak pujian?"</span></div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Adakah awak tidak faham? Kalau begitu, Cik Petra, tak bolehkah awak fikirkan seseorang yang disukai dalam fikiran awak yang cerdas itu?"</span></div>
+      <div class="narrative">Petra mengeluarkan bunyi "hah" pada cadangan mengejut itu. Dalam fikirannya, apa yang dia samar-samar boleh ingat hanyalah <span class="red-text">Natsuki Subaru</span>. Zikr mengangguk dalam-dalam sebagai tindak balas kepada Petra.</div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Seseorang yang disukai itu akan tersenyum kepada awak hasil daripada perbuatan awak. Adakah itu tidak cukup untuk membuatkan awak rasa dihargai?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Itu… hmm, ya."</span></div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Ia adalah sama. Saya adalah Jeneral Empayar Vollachia, tetapi orang yang Cik Petra fikirkan itu mungkin jauh lebih hebat daripada saya, sekurang-kurangnya pada pendapat saya. Jadi, ini sudah memadai."</span></div>
+      <div class="narrative">Begitulah kata Zikr, dengan sebelah mata tertutup dan tangannya memegang dada sambil tersenyum kepada Petra. Sebab itulah Petra juga secara senyap menundukkan kepalanya dan tidak dapat berkata apa-apa――,</div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">???</span><span class="dialogue-text">"――Walau bagaimanapun, Duli Yang Maha Mulia Vincent menyokong sepenuhnya ganjaran dan hukuman mengikut merit. Saya tidak setuju orang yang telah melakukan perkhidmatan berjasa sedemikian berkata perkara yang tidak mementingkan diri, kerana ia menyukarkan askar untuk meluahkan pendapat mereka."</span></div>
+      <div class="narrative">Kemudian, sebaliknya Petra, yang telah menutup mulutnya, satu suara menyampuk dari arah yang berbeza. Petra dan Zikr menoleh untuk melihat <span class="red-text">Serena</span> berjalan perlahan ke arah mereka. Serena Dracroy, dengan parut putih yang tersendiri di pipinya yang bagaimanapun tidak mencacatkan kecantikan bermaruahnya, ditemani oleh kenalannya <span class="red-text">Roswaal</span> di sebelahnya, yang membuatkan bibir Petra mencebik.</div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">Serena Dracroy</span><span class="dialogue-text">"Seperti biasa, macam mana awak boleh sangat tidak disukai oleh seseorang yang nampak cukup tua untuk jadi anak perempuan awak? Awak tak boleh merungut tentang ditikam dari belakang oleh seseorang yang secara terbuka menunjukkan niat memberontak."</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Saya tidak akan sesekali mengupah kanak-kanak yang tidak boleh memikirkan tentang akiiiibatnya~. Tidak kira apa persepsi awak terhadap saya, saya hanya menggaji orang yang cekap seperti Petra-kun, Otto-kun, dan seumpamanya."</span></div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">Serena Dracroy</span><span class="dialogue-text">"Itu tabiat buruk awak. Lambat laun, ia akan menjadi sebab kaki awak disapu dari bawah awak."</span></div>
+      <div class="narrative">Serena mengangkat bahunya, mengadakan pertukaran bersahaja dengan Roswaal. Petra, yang secara sedar mengelak daripada berhubung dengannya, menjadi sedikit kaku apabila ditenung.</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"A-apa dia, Tuan?"</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Janganlah begitu waspada. Saya cuma bimbang awak bersendirian dan awak bekerja terlalu banyak. Di mana Frederica?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"…Frederica-neesama telah menyibukkan dirinya untuk masa yang lama dan sekarang sedang berehat. Selepas banyak permintaan, dia akhirnya berehat."</span></div>
+      <div class="narrative">Ia mengingatkannya bahawa Frederica hampir tidak bernafas dan tidur seolah-olah dalam koma.</div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Frederica mempunyai rasa tangguuungjawab yang kuat~. Sama sekali dia tidak bermaksud tidak menghormati awak, Petra-kun."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"――Hk, saya dah tahu tu, awak tak perlu bagitahu saya."</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Saya faham. Awak betul. Maaf saya cakap sesuatu yang tak sepatutnya. ――Awak okey?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"…Sihir Yang sedang melakukan kerjanya dengan betul."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Buat masa sekarang, saya ingin bekerja lebih sedikit lagi. Adakah awak ingin menghentikan saya?"</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"――. Tidak, saya tidak akan hentikan awak. Kita semua mempunyai peluang dalam hidup apabila kita perlu mengatasi alasan dan akal fikiran dengan semangat dan paksaan, dan jika ini masanya untuk awak, Petra-kun, saya tidak akan mengambilnya daripada awak."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"…Saya masih tidak sukakan awak, Tuan."</span></div>
+      <div class="narrative">Petra memalingkan wajahnya daripada Roswaal, yang menutup sebelah mata dan memandangnya dengan mata birunya.</div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">Serena Dracroy</span><span class="dialogue-text">"Hubungan tuan-hamba yang menyusahkan. Cara perkara sebegini berlaku, Empayar dan Kerajaan tidaklah begitu berbeza. Bukankah begitu, Jeneral Kelas Kedua Zikr?"</span></div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"Dengan Cik Petra yang begitu cerdik pada usianya, tidak mengherankan bahawa dia begitu bersemangat tentang pendidikan Margrave Mathers. Apabila keikhlasan bertemu keikhlasan, saya rasa pertembungan tidak dapat dielakkan."</span></div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">Serena Dracroy</span><span class="dialogue-text">"Aduh, awak ni Jeneral Empayar sepenuhnya. Saya ingatkan awak lelaki yang baik, tapi sebaliknya, awak macam ni. Awak senangkan saya dengan tunjukkan wajah yang saya suka."</span></div>
+      <div class="narrative">Petra mengeluh melihat perbualan antara dua temperamen Empayar yang paling unik itu. ――Sifat Roswaal, apa pun ia, tidak penting. Sekarang dia berhadapan dengan Roswaal, yang telah dielakkannya, tiada apa yang dapat menghalangnya sekarang. Untuk itu, Petra mengetatkan pipinya, dan memandang ke arah Roswaal,</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Apa yang awak rancang nak buat dengan <span class="red-text">Subaru</span>, Tuan?"</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Hmm."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Tolong jawab."</span></div>
+      <div class="narrative">Soalan Petra adalah lurus, tetapi kurang spesifik. Roswaal melepaskan keluhan kecil apabila ia ditujukan kepadanya. Dia menutup sebelah mata lagi, dan, kali ini, memandang Petra dengan mata kuningnya―― kali ini, dengan pandangan bukan manusia yang Petra tidak suka.<br><br>――Sifat luar biasa hubungan <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span> memberi kesan yang kuat kepada Petra.</div>
+      <div class="narrative">Petra mengesyaki bahawa ini adalah sesuatu yang berbeza daripada kelakuan buruk <span class="red-text">Roswaal</span> di kampung Arlam, kampung halaman <span class="red-text">Petra</span>, atau <span class="red-text">Sanctuary</span> tempat asal <span class="red-text">Frederica</span> dan <span class="red-text">Garfiel</span>―― sesuatu yang <span class="red-text">Subaru</span> dan yang lain hampir bertoleransi sepenuhnya.</div>
+      <div class="narrative">Jika seseorang melihat kesalahan <span class="red-text">Roswaal</span> dan siapa yang memaafkannya, keadaannya sama bagi <span class="red-text">Subaru</span>, <span class="red-text">Emilia</span>, dan <span class="red-text">Frederica</span>, yang terlalu pemaaf. Kemudian ada <span class="red-text">Beatrice</span> dan <span class="red-text">Garfiel</span>, yang berkata mereka marah, diikuti oleh <span class="red-text">Ram</span>, yang berada dalam kedudukan unik, dan <span class="red-text">Petra</span> dan <span class="red-text">Otto</span>, yang jelas tidak memaafkan <span class="red-text">Roswaal</span>.</div>
+      <div class="narrative">Sememangnya, <span class="red-text">Petra</span> dan <span class="red-text">Otto</span> sentiasa merasakan ketegangan apabila berurusan dengan <span class="red-text">Roswaal</span>. Sudah tentu, mereka tidak mahu membuat kacau, jadi ketegangan itu umpama panggang senyap di atas api. Apa yang dia tidak suka tentang <span class="red-text">Roswaal</span> ialah dia tidak pernah mengubah ekspresinya semasa dipanggang sedemikian rupa.</div>
+      <div class="narrative">Walau bagaimanapun, api biru yang <span class="red-text">Petra</span> dan <span class="red-text">Otto</span> tujukan kepada <span class="red-text">Roswaal</span> dan haba di udara antara <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span> nampaknya berbeza secara asas. Ia adalah cara yang teruk untuk mengatakannya, <span class="red-text">Petra</span> tidak mahu mengakuinya. Tetapi dia yakin.</div>
+      <div class="narrative">Antara <span class="red-text">Subaru</span> dan <span class="red-text">Roswaal</span>, terdapat satu rahsia yang tidak disertakan oleh <span class="red-text">Petra</span> mahupun orang lain. Rahsia yang dikongsi itu adalah sumber yang menimbulkan jenis ketegangan yang berbeza. Tambahan pula, akibat daripada rahsia itu pasti, mungkin, akan menyebabkan malang kepada <span class="red-text">Subaru</span>.</div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Apa yang saya rancang nak buat dengan <span class="red-text">Subaru</span>, ya~?"</span></div>
+      <div class="narrative">Pada pandangan bermusuhan <span class="red-text">Petra</span>, <span class="red-text">Roswaal</span> bergumam dengan suara yang agak garau. Dia merasakan tiada suasana penipuan dan ejekan biasa yang tersimpan di dalamnya. Walau bagaimanapun, walaupun tanpa suasana badut sebegitu, dia tidak boleh mempercayai <span class="red-text">Roswaal</span> begitu sahaja. Seolah-olah untuk mengesahkan perasaan <span class="red-text">Petra</span>, <span class="red-text">Roswaal</span>, dengan sebelah mata masih tertutup,</div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"<span class="red-text">Petra-kun</span>, apa yang awak rasa perkara yang betul untuk saya buat~?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"…Awak sedang mengejek saya ke?"</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Tak, tak, bukan begitu maksud saya. Secara jujur, saya agak buntu~... Pendirian macam mana yang patut saya ambil, mengenai <span class="red-text">Subaru-kun</span>?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"――――"</span></div>
+      <div class="narrative">Semasa dia berkata demikian, <span class="red-text">Roswaal</span> mengangkat sedikit kedua-dua belah tangannya dan menyalakan hujung jarinya dengan cahaya warna yang berbeza. Terapung merah di tangan kanannya dan biru di sebelah kirinya, dia bersungguh-sungguh mempertimbangkan langkah seterusnya. Merah dan biru, ke arah mana pun masing-masing memimpin, <span class="red-text">Petra</span> tidak pasti jalan mana yang lebih baik untuknya―― tidak, untuk orang-orang yang penting baginya.</div>
+      <div class="narrative">Walaupun dia tidak pasti, jika ada apa-apa yang <span class="red-text">Petra</span> boleh lakukan, ia hanyalah satu perkara.</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Kalau…"</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Hmm?"</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Kalau awak menyebabkan <span class="red-text">Subaru</span> sakit lagi, kalau awak menyebabkan dia sedih lagi, saya takkan maafkan awak, Tuan... Tak, saya pasti akan buat awak menyesal."</span></div>
+      <div class="narrative">Tidak memaafkannya tidak akan menyakitkan <span class="red-text">Roswaal</span> dalam apa cara sekalipun. Selepas berkhidmat kepadanya selama setahun setengah, dia faham itu. Inilah sebabnya, memikirkan kembali masa lalu setahun setengah itu sekeras yang dia boleh, <span class="red-text">Petra</span> mengatakan satu perkara yang <span class="red-text">Roswaal</span> paling benci. Ya, dia akan membuatnya menyesal walau apa pun. Atas sebab itu――,</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Apa pun yang awak nak buat, apa pun yang awak rancang nak buat, Tuan, saya akan halang dengan apa cara sekalipun."</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"――――"</span></div>
+      <div class="narrative">Seketika, kesunyian lahir antara <span class="red-text">Petra</span> dan <span class="red-text">Roswaal</span>. <span class="red-text">Petra</span> menumpukan seluruh kekuatannya untuk menegangkan pipinya, berniat untuk membuat wajah paling tegas yang pernah dia buat dalam sejarah dirinya yang comel. Sebagai tindak balas kepada pendekatan langsung <span class="red-text">Petra</span>, <span class="red-text">Roswaal</span> terdiam. Tidak jelas sejauh mana wajah tegas <span class="red-text">Petra</span> menyumbang kepada perenungannya dalam saat kesunyian itu.</div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"…Itu pastinya menyusahkan~. Awak nampaknya lebih disayangi daripada saya."</span></div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"…Bila awak kata saya disayangi, oleh apa sebenarnya?"</span></div>
+      <div class="dialogue-box box-roswaal"><span class="char-name char-roswaal">Roswaal</span><span class="dialogue-text">"Sesuatu yang saya dah nekad untuk lawan, tapi tak pernah berjaya menang, sejenis kuasa pelik yang macam tu."</span></div>
+      <div class="narrative">Dengan mengangkat bahunya <span class="red-text">Roswaal</span> sekali lagi menyatakan sesuatu di luar pemahaman <span class="red-text">Petra</span>. Tetapi, apa yang mengeruhkan wajahnya semasa dia menggumamkan ini membuatkan <span class="red-text">Petra</span> berfikir ia bukan omong kosong semata-mata. Memang, <span class="red-text">Roswaal</span> sedang berhadapan dengan rasa tidak berdaya, sesuatu yang dia sedar sepenuhnya bahawa dia tidak boleh menang melawannya. Walaupun dia diberitahu bahawa dia disayangi sebegitu, ia tidak begitu masuk akal bagi <span class="red-text">Petra</span>.</div>
+      <div class="narrative"><span class="red-text">Petra</span> hanya mahu disayangi oleh orang yang dia cintai. Di samping itu, dia mahu orang tersayangnya gembira sebaik mungkin dengan senyuman di wajah mereka. Sebab itu――,</div>
+      <div class="dialogue-box box-petra"><span class="char-name char-petra">Petra</span><span class="dialogue-text">"Saya nak <span class="red-text">Emilia-neesama</span> dan <span class="red-text">Subaru</span> tersenyum."</span></div>
+      <div class="narrative"><span class="red-text">Petra</span> menepuk dadanya dengan kuat dan menggumamkan kata-kata itu seolah-olah dalam doa. Dia sangat berharap agar semua doa ini akan tergantung seperti awan di atas mereka yang dia cintai, melindungi mereka daripada kesusahan yang sebaliknya akan turun ke atas mereka seperti sinaran matahari.</div>
+      <div class="narrative">――Di sebelah pertukaran <span class="red-text">Petra</span> dan <span class="red-text">Roswaal</span>, melihat tuan dan hamba itu membengkak dengan ketegangan yang membara, <span class="red-text">Serena</span> melemparkan senyuman kepada <span class="red-text">Zikr</span>.</div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">Serena</span><span class="dialogue-text">"Apa pendapat awak? Orang-orang Kerajaan pun tunjukkan potensi yang agak baik, kan? Agak rumit dan misteri, macam yang saya suka."</span></div>
+      <div class="dialogue-box box-zikr"><span class="char-name char-zikr">Zikr</span><span class="dialogue-text">"…Ia cantik bila awak senyum macam tu, High Countess, tapi saya tak boleh kata ia citarasa yang baik."</span></div>
       <div class="loop-marker">TAMAT</div>
     `,
     2: `
       <h2 class="battle-title">Bab 2: Tidak Akan Menjadi Penjahat</h2>
 
-      <div class="dialogue-box box-olbart">
-        <span class="char-name char-olbart">???</span>
-        <span class="dialogue-text">"Kakakakka! Tak sangka orang macam aku mati bukan kat medan perang tapi kat zon selamat. Seumur hidup aku tak pernah dengar <span class="highlight">Shinobi</span> mati macam ni, tapi ni ironi sangat."</span>
-      </div>
-
-      <div class="narrative">
-        Begitulah kata orang tua raksasa itu, melambaikan kedua-dua lengan bajunya yang kosong sambil ketawa terbahak-bahak.
-        Mendengar ketawa yang menyegarkan itu, namun tidak berdaya untuk membantu dengan sihir penyembuhannya, <span class="red-text">Garfiel</span> berasa campur baur.
-        <br><br>
-        ――Selepas pertempuran menentang <span class="red-text">Bencana Besar</span>, Garfiel telah menyertai penyembuh, dan kini sedang merawat yang cedera.
-        Sejak datang ke Empayar, Garfiel terus mempertaruhkan nyawanya dalam pertempuran sengit tanpa banyak rehat.
-      </div>
-
-      <div class="dialogue-box box-serena">
-        <span class="char-name char-serena">???</span>
-        <span class="dialogue-text">"Sebaik sahaja awak buat keputusan untuk lakukan sesuatu, sebarang percubaan untuk memujuk awak adalah sia-sia. Kalau begitu, pergi cipta sebanyak mungkin hutang budi daripada Empayar yang awak boleh. Terdapat pasaran yang kukuh untuk rasa terima kasih sekarang."</span>
-      </div>
-
-      <div class="narrative">
-        Memang, di tengah-tengah semua orang yang menentang idea Garfiel, dia gembira dengan kehadiran orang yang dia minati, yang telah menjelaskan bahawa dia berada di pihaknya. Cara penyampaiannya yang menunjukkan kesalahannya adalah sangat tipikal untuknya, sesuatu yang dia suka tentangnya.
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Bila Kapten alami masa paling susah antara kita semua, macam mana diri aku yang hebat ni boleh kekal gelabah?"</span>
-      </div>
-
-      <div class="narrative">
-        Mengeluh, Garfiel mengetap taring tajamnya.
-        Mereka telah kehilangan seorang wanita yang kuat, benar-benar kuat. Walaupun dia tidak boleh mengatakan mereka telah melawan musuh yang sama sebelah-menyebelah, pemandangan banyak api yang mempesonakan yang menjulang di dalam Ibu Kota Diraja telah terpatri di kelopak mata Garfiel.
-      </div>
-
-      <div class="dialogue-box box-olbart">
-        <span class="char-name char-olbart">???</span>
-        <span class="dialogue-text">"…Aduhai, beraninya orang muda tinggalkan orang tua di belakang serta-merta. Tak boleh nak tolong betapa menjijikkannya aspek tu."</span>
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Hah, tu sindiran ke, atuk? Cuma sebab diri aku yang hebat ni tak boleh sembuhkan tangan kau…"</span>
-      </div>
-
-      <div class="dialogue-box box-olbart">
-        <span class="char-name char-olbart">Olbart</span>
-        <span class="dialogue-text">"Kakakakka! Aku takkan kata tu sindiran. Biar aku bagitahu kau, sumber kekuatan aku selama berdekad-dekad ni adalah sentiasa bercakap tentang iri hati dan cemburu aku, tahu? Kata yang aku iri hati bukan tipu atau apa-apa macam tu. Ahh, aku dipenuhi dengan cemburu."</span>
-      </div>
-
-      <div class="narrative">
-        Menggoyangkan kening putihnya ke atas dan ke bawah, <span class="red-text">Olbart</span> dengan mahir menggunakan kakinya untuk menggaru lehernya.
-        Dia tidak kelihatan terganggu dengan kehilangan kedua-dua tangannya.
-        Tetapi sekali lagi, apabila topik bertahan dari pengalaman hampir mati――,
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">???</span>
-        <span class="dialogue-text">"――Diamlah, orang tua sialan! Berhenti kacau lelaki yang buat banyak kerja walaupun dia penat gila!"</span>
-      </div>
-
-      <div class="dialogue-box box-olbart">
-        <span class="char-name char-olbart">Olbart</span>
-        <span class="dialogue-text">"Oh, takutnya takutnya. Itu bukan semangat seseorang yang separuh mati."</span>
-      </div>
-
-      <div class="narrative">
-        Satu susuk tubuh yang terbaring di atas katil di belakang bilik menjerit dengan marah, dan Olbart ketawa mendengarnya dengan bunyi garau yang rendah. Kepada semangat yang garang itu, Garfiel menggaru sambil berkata "Oi",
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Diri aku yang hebat ni berterima kasih atas bantuan, tapi risaukan badan kau sendiri dulu. Kau serius selangkah lagi dari kematian… keadaan kau sama macam 'Korban Vivirolo'."</span>
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">???</span>
-        <span class="dialogue-text">"Ahh? Aku cakap terima kasih kat kaulah aku terselamat sial! Bajingan, jangan cakap benda karut macam kau takkan terima kasih aku… Ghgyaoh!"</span>
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Diam dan tidur!"</span>
-      </div>
-
-      <div class="narrative">
-        Dia menggunakan tangannya untuk menekan kepala susuk tubuh pendek itu, yang seluruh badannya menjerit ketika dia jatuh kembali. Perkara sedemikian adalah perkara biasa memandangkan kecederaannya yang parah.
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Bukan tempat diri aku yang hebat ni untuk cakap, tapi aku terkejut kau boleh bangun dan bercakap."</span>
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">Groovy</span>
-        <span class="dialogue-text">"Sakit gila babi dan susah nak mampus, tapi benda karut tu takkan hentikan <span class="red-text">Great Groovy Gumlet</span>. Macam tu lah keadaannya, jadi guna racun atau ubat atau apa-apa untuk redakan… GUHHOHHHH…!!"</span>
-      </div>
-
-      <div class="dialogue-box box-olbart">
-        <span class="char-name char-olbart">Olbart</span>
-        <span class="dialogue-text">"Mengalah je lah, mengalah. Ni hasil daripada kau abaikan semua isyarat dalam badan kau. Aku hilang kedua-dua tangan dan kau pada dasarnya sedekat dengan kematian macam aku. Kenapa tak bersara je?"</span>
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">Groovy</span>
-        <span class="dialogue-text">"Macamlah aku akan buat macam tu, bodoh!"</span>
-      </div>
-
-      <div class="narrative">
-        Sebagai tindak balas kepada ejekan Olbart, mempamerkan taringnya dan menjerit dalam kemarahan, adalah <span class="red-text">Groovy Gumlet</span>―― salah seorang daripada <span class="red-text">Sembilan Jeneral Dewa</span>, dan mungkin orang yang paling hampir dengan kematian di Empayar sambil masih terselamat.
-        Dalam pertarungan hidup atau mati menentang Bencana Besar, dia telah memainkan peranan yang sangat penting. Lagipun, dialah yang menyilangkan pedang dengan pelakon utama "Iris dan Raja Duri", <span class="red-text">Maharaja Duri, Eugard Vollachia</span>.
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Dengar cerita kalau kau tak buat tu, semua orang akan akhirnya tak boleh bergerak disebabkan duri-duri tu."</span>
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">Groovy</span>
-        <span class="dialogue-text">"Aku cuma tarik keluar apa saja yang aku boleh. Lepas aku hantar pergi Maharaja Duri dan Pemuja tu, aku cuma terbaring sampai aku boleh bagi <span class="red-text">Pedang Fiend</span> tu kat si bajingan Cecilus tu."</span>
-      </div>
-
-      <div class="narrative">
-        Groovy bergumam seolah-olah dia merajuk, tetapi sebelum dia jatuh, dia telah melakukan banyak kerja.
-        Pengumpulan keajaiban dan individu yang beraksi sepenuhnya, itulah realiti apa yang berlaku ketika itu di Ibu Kota Diraja. Sama ada Garfiel, yang telah bertarung menentang <span class="red-text">Naga Awan</span>; Groovy, yang menyelamatkan Maharaja Duri daripada durinya sendiri; atau Olbart, yang mengorbankan sebelah tangannya untuk mengelakkan rancangan Penyihir.
-      </div>
-
-      <div class="dialogue-box box-olbart">
-        <span class="char-name char-olbart">Olbart</span>
-        <span class="dialogue-text">"Baiklah, sebagai orang tua yang dah tak banyak masa, memang susah nak tengok orang muda mati satu demi satu, jadi seronok tengok korang terselamat."</span>
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">Groovy</span>
-        <span class="dialogue-text">"…Kes aku diketepikan, agak meragukan untuk cakap mamat tu terselamat."</span>
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Maksud kau mamat tu, kau maksudkan…"</span>
-      </div>
-
-      <div class="narrative">
-        Memikirkan orang yang disebutnya, pandangan Garfiel beralih ke hujung bilik penyembuhan. Dan, menonjol dengan cara yang pelik dan ketara, dia menyedari susuk tubuh tersendiri sesuatu yang berdiri tegak.
-        Dan di sudut bilik, berdiri dalam cara yang ia menyatukan dirinya ke dinding supaya tidak menjadi penghalang, adalah makhluk yang badannya terdiri daripada keluli―― apabila menyedari pandangan Garfiel, permata hijau yang terletak di tempat yang kelihatan seperti kepalanya bersinar,
-      </div>
-
-      <div class="dialogue-box box-moguro">
-        <span class="char-name char-moguro">???</span>
-        <span class="dialogue-text">"Saya, mengesan pandangan. Tugas, arahan, atau instruksi, ia diramalkan adalah salah satu daripada ini."</span>
-      </div>
-
-      <div class="narrative">
-        Sambil berkata demikian, berjalan terhuyung-hayang ke arah Garfiel dan yang lain, adalah satu lagi daripada Sembilan Jeneral Dewa, yang dikenali sebagai <span class="red-text">Manusia Keluli, Moguro Hagane</span>.
-        Walau bagaimanapun, untuk lebih tepat, identiti sebenar mereka adalah <span class="red-text">Meteor</span> yang berfungsi sebagai teras <span class="red-text">Istana Kristal</span>. Gelaran ini, selepas keruntuhan Istana Kristal dan <span class="red-text">Meriam Kristal Sihir</span> yang penting itu, tidak lagi mempunyai sebarang makna, tetapi――, 
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Ah, maaf pasal tu. Mata aku cuma kebetulan merayau ke sana, aku tak ada apa-apa tugas untuk kau."</span>
-      </div>
-
-      <div class="dialogue-box box-moguro">
-        <span class="char-name char-moguro">Moguro</span>
-        <span class="dialogue-text">"Diterima. Dan, dua yang lain?"</span>
-      </div>
-
-      <div class="dialogue-box box-groovy">
-        <span class="char-name char-groovy">Groovy</span>
-        <span class="dialogue-text">"Tak, tak ada apa-apa. Duduk sana supaya kau tak mengganggu, Moguro."</span>
-      </div>
-
-      <div class="dialogue-box box-moguro">
-        <span class="char-name char-moguro">Moguro</span>
-        <span class="dialogue-text">"Moguro. Itu saya. Diterima. Akan menunggu arahan selanjutnya."</span>
-      </div>
-
-      <div class="narrative">
-        Seperti yang jelas daripada dialog mereka, Moguro Hagane tidak ingat apa-apa dari sebelum Bencana Besar.
-        Kuasa besar yang mampu menerbangkan seluruh Ibu Kota Diraja telah diangkat secara paksa ke langit untuk mengelakkan hasil sedemikian, meletup tanpa memusnahkan kawasan itu, jadi mungkin boleh dikatakan bahawa ini adalah harga kecil yang perlu dibayar.
-      </div>
-
-      <div class="dialogue-box box-garfiel">
-        <span class="char-name char-garfiel">Garfiel</span>
-        <span class="dialogue-text">"Macam mana aku boleh cakap macam tu lepas apa yang jadi pada Rem?"</span>
-      </div>
-
-      <div class="narrative">
-        Garfiel mengetap taringnya dan tanpa sedar tersenyum.
-        Kerana dia tersenyum, dia bimbang sedikit jika tidak mengapa untuk tersenyum, dan kemudian, mengikut hatinya, dia tersenyum.
-      </div>
-
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">???</span><span class="dialogue-text">"Kakakakka! Tak sangka orang macam aku mati bukan kat medan perang tapi kat zon selamat. Seumur hidup aku tak pernah dengar <span class="highlight">Shinobi</span> mati macam ni, tapi ni ironi sangat."</span></div>
+      <div class="narrative">Begitulah kata orang tua raksasa itu, melambaikan kedua-dua lengan bajunya yang kosong sambil ketawa terbahak-bahak. Mendengar ketawa yang menyegarkan itu, namun tidak berdaya untuk membantu dengan sihir penyembuhannya, <span class="red-text">Garfiel</span> berasa campur baur.</div>
+      <div class="narrative">――Selepas pertempuran menentang <span class="red-text">Bencana Besar</span>, Garfiel telah menyertai penyembuh, dan kini sedang merawat yang cedera. Sejak datang ke Empayar, Garfiel terus mempertaruhkan nyawanya dalam pertempuran sengit tanpa banyak rehat.</div>
+      <div class="dialogue-box box-serena"><span class="char-name char-serena">???</span><span class="dialogue-text">"Sebaik sahaja awak buat keputusan untuk lakukan sesuatu, sebarang percubaan untuk memujuk awak adalah sia-sia. Kalau begitu, pergi cipta sebanyak mungkin hutang budi daripada Empayar yang awak boleh. Terdapat pasaran yang kukuh untuk rasa terima kasih sekarang."</span></div>
+      <div class="narrative">Memang, di tengah-tengah semua orang yang menentang idea Garfiel, dia gembira dengan kehadiran orang yang dia minati, yang telah menjelaskan bahawa dia berada di pihaknya.</div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Bila Kapten alami masa paling susah antara kita semua, macam mana diri aku yang hebat ni boleh kekal gelabah?"</span></div>
+      <div class="narrative">Mengeluh, Garfiel mengetap taring tajamnya. Mereka telah kehilangan seorang wanita yang kuat, benar-benar kuat.</div>
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">???</span><span class="dialogue-text">"…Aduhai, beraninya orang muda tinggalkan orang tua di belakang serta-merta. Tak boleh nak tolong betapa menjijikkannya aspek tu."</span></div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Hah, tu sindiran ke, atuk? Cuma sebab diri aku yang hebat ni tak boleh sembuhkan tangan kau…"</span></div>
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Kakakakka! Aku takkan kata tu sindiran. Biar aku bagitahu kau, sumber kekuatan aku selama berdekad-dekad ni adalah sentiasa bercakap tentang iri hati dan cemburu aku, tahu?"</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">???</span><span class="dialogue-text">"――Diamlah, orang tua sialan! Berhenti kacau lelaki yang buat banyak kerja walaupun dia penat gila!"</span></div>
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Oh, takutnya takutnya. Itu bukan semangat seseorang yang separuh mati."</span></div>
+      <div class="narrative">Satu susuk tubuh yang terbaring di atas katil di belakang bilik menjerit dengan marah, dan Olbart ketawa mendengarnya dengan bunyi garau yang rendah.</div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Diri aku yang hebat ni berterima kasih atas bantuan, tapi risaukan badan kau sendiri dulu. Kau serius selangkah lagi dari kematian… keadaan kau sama macam 'Korban Vivirolo'."</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">???</span><span class="dialogue-text">"Ahh? Aku cakap terima kasih kat kaulah aku terselamat sial! Bajingan, jangan cakap benda karut macam kau takkan terima kasih aku… Ghgyaoh!"</span></div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Diam dan tidur!"</span></div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Bukan tempat diri aku yang hebat ni untuk cakap, tapi aku terkejut kau boleh bangun dan bercakap."</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">Groovy</span><span class="dialogue-text">"Sakit gila babi dan susah nak mampus, tapi benda karut tu takkan hentikan <span class="red-text">Great Groovy Gumlet</span>."</span></div>
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Mengalah je lah, mengalah. Ni hasil daripada kau abaikan semua isyarat dalam badan kau. Kenapa tak bersara je?"</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">Groovy</span><span class="dialogue-text">"Macamlah aku akan buat macam tu, bodoh!"</span></div>
+      <div class="narrative">Sebagai tindak balas kepada ejekan Olbart, mempamerkan taringnya dan menjerit dalam kemarahan, adalah <span class="red-text">Groovy Gumlet</span>.</div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Dengar cerita kalau kau tak buat tu, semua orang akan akhirnya tak boleh bergerak disebabkan duri-duri tu."</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">Groovy</span><span class="dialogue-text">"Aku cuma tarik keluar apa saja yang aku boleh. Lepas aku hantar pergi Maharaja Duri dan Pemuja tu, aku cuma terbaring sampai aku boleh bagi <span class="red-text">Pedang Fiend</span> tu kat si bajingan Cecilus tu."</span></div>
+      <div class="dialogue-box box-olbart"><span class="char-name char-olbart">Olbart</span><span class="dialogue-text">"Baiklah, sebagai orang tua yang dah tak banyak masa, memang susah nak tengok orang muda mati satu demi satu, jadi seronok tengok korang terselamat."</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">Groovy</span><span class="dialogue-text">"…Kes aku diketepikan, agak meragukan untuk cakap mamat tu terselamat."</span></div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Maksud kau mamat tu, kau maksudkan…"</span></div>
+      <div class="narrative">Memikirkan orang yang disebutnya, pandangan Garfiel beralih ke hujung bilik penyembuhan.</div>
+      <div class="dialogue-box box-moguro"><span class="char-name char-moguro">???</span><span class="dialogue-text">"Saya, mengesan pandangan. Tugas, arahan, atau instruksi, ia diramalkan adalah salah satu daripada ini."</span></div>
+      <div class="narrative">Sambil berkata demikian, berjalan terhuyung-hayang ke arah Garfiel dan yang lain, adalah satu lagi daripada Sembilan Jeneral Dewa, yang dikenali sebagai <span class="red-text">Manusia Keluli, Moguro Hagane</span>.</div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Ah, maaf pasal tu. Mata aku cuma kebetulan merayau ke sana, aku tak ada apa-apa tugas untuk kau."</span></div>
+      <div class="dialogue-box box-moguro"><span class="char-name char-moguro">Moguro</span><span class="dialogue-text">"Diterima. Dan, dua yang lain?"</span></div>
+      <div class="dialogue-box box-groovy"><span class="char-name char-groovy">Groovy</span><span class="dialogue-text">"Tak, tak ada apa-apa. Duduk sana supaya kau tak mengganggu, Moguro."</span></div>
+      <div class="dialogue-box box-moguro"><span class="char-name char-moguro">Moguro</span><span class="dialogue-text">"Moguro. Itu saya. Diterima. Akan menunggu arahan selanjutnya."</span></div>
+      <div class="dialogue-box box-garfiel"><span class="char-name char-garfiel">Garfiel</span><span class="dialogue-text">"Macam mana aku boleh cakap macam tu lepas apa yang jadi pada Rem?"</span></div>
+      <div class="narrative">Garfiel mengetap taringnya dan tanpa sedar tersenyum.</div>
       <div class="loop-marker">△▼△▼△▼△</div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">???</span><span class="dialogue-text">"――Jadi, Anastasia-sama akan kembali ke Lugunica melalui Kararagi?"</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Ya, itu rancangannya. Saya kat Empayar sebagai utusan dari Kararagi, tahu."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Ada segunung benda nak difikirkan, mesti susah untuk Otto-kun, kan?"</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Memang benar ia agak menakutkan, tetapi jika kita bercakap dari segi mempunyai banyak perkara untuk difikirkan, saya tidak boleh membandingkannya dengan Duli Yang Maha Mulia Maharaja atau Perdana Menteri Berstetz, yang perlu membina semula Empayar dari saat ini."</span></div>
+      <div class="dialogue-box box-berstetz"><span class="char-name char-berstetz">Berstetz</span><span class="dialogue-text">"Seperti yang awak nyatakan, terdapat banyak cabaran di hadapan. Tetapi sebenarnya, saya tidak menganggapnya sebagai beban."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Oh, ye ke? Itu sangat menggalakkan."</span></div>
+      <div class="dialogue-box box-berstetz"><span class="char-name char-berstetz">Berstetz</span><span class="dialogue-text">"Pada mulanya, saya adalah subjek khianat yang bersabahat dengan Labah-labah Putih, Chisha Gold..."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"…Tetapi awak bercakap dengan kami seperti ini. Tiada tindakan sedemikian, betul?"</span></div>
+      <div class="dialogue-box box-berstetz"><span class="char-name char-berstetz">Berstetz</span><span class="dialogue-text">"Ya. Maharaja telah memutuskan sedemikian."</span></div>
+      <div class="dialogue-box box-cecilus"><span class="char-name char-cecilus">Cecilus</span><span class="dialogue-text">"Sebelum mana-mana watak sampingan jadi dahagakan darah, saya ingin isytiharkan bahawa ia adalah keputusan Duli Yang Maha Mulia untuk tidak membunuh Berstetz-san, jadi kamu semua patut ikutnya."</span></div>
+      <div class="dialogue-box box-berstetz"><span class="char-name char-berstetz">Berstetz</span><span class="dialogue-text">"Saya tidak pernah sangka saya akan dilindungi oleh Jeneral Kelas Pertama Cecilus Segmunt. Jika bukan <span class="red-text">Pedang Yang</span>, saya akan sangka bilahnya yang akan memenggal kepala saya."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Namun ia tidak berlaku. Ia adalah situasi Empayar, jadi orang luar tidak boleh mengulas mengenainya, namun saya menganggapnya sebagai keputusan yang bijak."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Saya setuju. Kalau Berstetz-san pun dibuang dan Maharaja satu-satunya yang boleh berfikir, bukankah dia akan mati, walaupun dengan sokongan Isteri-san dia yang cantik?"</span></div>
+      <div class="dialogue-box box-berstetz"><span class="char-name char-berstetz">Berstetz</span><span class="dialogue-text">"Memang, begitulah. Saya, bagi pihak saya, gembira melihat Duli Yang Maha Mulia menerima Maharani Permaisuri baru."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Dia betul-betul seorang puteri yang mementingkan diri sendiri."</span></div>
+      <div class="dialogue-box box-echidna"><span class="char-name char-echidna">???</span><span class="dialogue-text">"Mungkin awak tidak perlu secara sedar cuba memainkan watak penjahat."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"――. Adakah awak mungkin bercakap dengan saya?"</span></div>
+      <div class="dialogue-box box-echidna"><span class="char-name char-echidna">Echidna</span><span class="dialogue-text">"Fakta bahawa awak menganggapnya sebagai kenyataan yang ditujukan kepada diri awak sendiri adalah bukti apa yang ada dalam hati awak, bukan?"</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Hujah itu tidak begitu meyakinkan, memandangkan awak mengatakannya sambil memandang saya."</span></div>
+      <div class="dialogue-box box-echidna"><span class="char-name char-echidna">Echidna</span><span class="dialogue-text">"Agak degil, awak ni. Padanan yang baik dengan Ana dalam hal itu."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Jangan ganggu Otto-kun macam tu. Saat awak dibenarkan bercakap dengan orang, awak jadi mulut murai."</span></div>
+      <div class="dialogue-box box-echidna"><span class="char-name char-echidna">Echidna</span><span class="dialogue-text">"Mhm, jangan bercakap seolah-olah saya hanya membuka mulut kerana keinginan peribadi."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Aduhai. Maaf, Otto-kun, anak saya ganggu awak."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Ia berkemungkinan sepenuhnya untuk seorang calon tercicir di tengah-tengah Pemilihan Diraja."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Rancangannya adalah untuk kita kembali ke Kerajaan dalam masa beberapa hari akan datang."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Sama juga untuk kami. Memandangkan pelik juga untuk langkah kita selari, bergantung pada sama ada kita dah siapkan semua persiapan, kami mungkin bertolak ke Kararagi seawal esok. Otto-kun, mengenai laporan ke istana…"</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Sila serahkan kepada kami. Ini bukan perkara yang boleh disampaikan melalui surat."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"…Dengan keadaan Natsuki-san sekarang, ia mungkin akan memberi kesan sebaliknya kepada Emilia-sama."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"…Dari bunyinya, situasi Natsuki-kun belum berubah?"</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"Memang. Kesatria Julius juga muncul beberapa kali, tetapi ia sukar. Saya benci katakan ini, tetapi ada tanggapan bahawa Priscilla-sama hanya pernah menyusahkannya…"</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Setakat yang Natsuki-kun fikirkan, itu tidak penting. ――Merisaukan."</span></div>
+      <div class="dialogue-box box-berstetz"><span class="char-name char-berstetz">Berstetz</span><span class="dialogue-text">"Saya faham pendapat utusan kedua-dua Kerajaan dan Negara-Negara Kota. Duli Yang Maha Mulia Maharaja telah mengarahkan agar kedua-dua negara diberikan setiap layanan..."</span></div>
+      <div class="dialogue-box box-anastasia"><span class="char-name char-anastasia">Anastasia</span><span class="dialogue-text">"Tak boleh cakap yang saya akan ambil mudah perkara ni. Tak ada yang lebih menegangkan daripada disajikan dengan nota janji hutang kosong."</span></div>
+      <div class="dialogue-box box-otto"><span class="char-name char-otto">Otto</span><span class="dialogue-text">"――Walaupun awak tidak mati, awak tidak akan menjadi musuh kami. Walau betapa Natsuki-san dan Emilia-sama terluka kerananya, kematian awak telah… memberikan saya pukulan yang agak keras."</span></div>
+      <div class="loop-marker">※　※　※　※　※　※　※　※　※　※　※　※</div>
 
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">???</span>
-        <span class="dialogue-text">"――Jadi, Anastasia-sama akan kembali ke Lugunica melalui Kararagi?"</span>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">???</span><span class="dialogue-text">"Dan begitulah, adik perempuan saya akan menjadi isteri Duli Yang Maha Mulia Maharaja-kun. Sudah tentu, matlamat yang kami adik-beradik usahakan sudah semakin hampir!"</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">???</span><span class="dialogue-text">"Matlamat… itu, awak sebut sebelum ni, dendam… kan?"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">???</span><span class="dialogue-text">"Betul tu! Dendam terhadap dunia!"</span></div>
+      <div class="narrative">Dia menepuk tangannya, dan ke arah lelaki lembut dengan rambut perang dan mata yang bersinar—— ke arah jawapan <span class="red-text">Flop O'Connell</span>, yang berdiri bertentangan dengan wanita Shudraq itu, mata <span class="red-text">Taritta</span> terbuka luas.</div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">???</span><span class="dialogue-text">"Ram, apa awak buat kat sini?"</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Ara, Mizelda. Cuma tengok hal ehwal cinta adik awak dari jauh."</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Ho, tu hobi yang bagus. Biar saya tengok."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Ini tak macam awak. Awak risaukan adik awak ke?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Jangan cakap yang ni tak macam saya. Pertama sekali, berapa lama awak dan saya kenal satu sama lain? Cuma beberapa hari."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Masa diperlukan? Untuk Ram dan awak?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Hahaha, awak betul."</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Perkataan 'risau' rasa lemah. Jadi, mari kita kata ambil berat."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Ya. Tapi sudah tentu. Awak kakak Taritta. Ram juga sentiasa risaukan Rem."</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Tapi, tak ada soalan yang Subaru lelaki yang baik. Walaupun mata dia malang."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"——. Mengenai itu, awak dan Ram kena bersetuju untuk tidak bersetuju."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Awak, awak ragu kemanusiaan lelaki lembut tu?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Tak, Flop juga lelaki yang baik. Rupa dia agak terlalu lembut, tapi dia sedap mata memandang. Pasti, Taritta juga tahu ni."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Makin lama, makin banyak benda nak disukai pasal awak, Mizelda."</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Begitu ke? Kalau awak lelaki, saya rasa saya akan jadikan awak suami saya."</span></div>
+      <div class="narrative">Sebagai kakak, kedua-dua mereka mempunyai banyak perkara untuk dikatakan tentang kehidupan cinta adik-adik mereka.</div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Dengar sini, Cik Taritta! Saya mungkin pernah cakap ni sebelum ni, tapi saya berani cakap sekali lagi!"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Kalau awak ada matlamat, impian, dan awak cakap besar tentang mencapainya, awak kena rebut peluang yang datang tanpa ragu-ragu."</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"Jadi, mengenai perkahwinan antara Duli Yang Maha Mulia Maharaja dan Medium… adakah Medium betul-betul okey dengan tu?"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Semestinya…! Adalah apa yang saya nak cakap, bagaimanapun, seperti yang awak boleh bayangkan, ada pertengkaran hangat bila pasal perkahwinan tu! Tapi…"</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"Tapi?"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Kalau saya utamakan dendam pada dunia lebih daripada kebahagiaan keluarga terdekat saya, keutamaan saya memang salah. Sebab tu saya tak buat cadangan yang Medium akan tolak dengan bersungguh-sungguh."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Lelaki yang cerdik di negara yang cerdik."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Bercakap pasal tu, awak ada perasaan ke kat Maharaja Vincent?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Itu soalan bodoh, Ram. Rupa elok Abel tak payah cakap lah. Tapi, ikut adat Kaum Shudraq, tradisi kami bawa pengantin lelaki balik ke hutan. Sebab saya tak boleh bawa Abel balik, dia tak lebih daripada gula-gula mata untuk saya."</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Tak, tu tak betul. ――Abel adalah gula-gula mata dan rakan seperjuangan bagi saya."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Saya faham."</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"Awak boleh pertimbangkan kedua-dua matlamat awak dan orang sekeliling awak dan ambil tindakan sewajarnya. Bila awak perlu buat keputusan, awak tak ragu-ragu… Benar-benar, awak mengagumkan."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"――? Itu benda kelakar untuk dikatakan, Cik Taritta."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Ya, awak ada. Sebab kenapa saya boleh kumpul keberanian untuk buat keputusan macam tu adalah sebab saya ikut contoh awak, Cik Taritta!"</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"Ah, ahhh, saya minta maaf! Saya terkejut sangat sampai saya cuma… bertindak balas secara refleks!"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"T-tak, tak, tak, salah saya sebab cuai. Seperti yang dijangka, Ketua Shudraq ada tahap latihan yang berbeza. Saya perlu belajar lebih banyak dari awak, bukan setakat minda awak."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Ya, minda. Itu yang saya paling kagum pasal awak."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Bila sesuatu buruk jadi kat kaki Cik Mizelda, awak tanpa disangka kena ambil alih sebagai Ketua. Awak mesti risau. Saya pasti ia menyakitkan! Tapi, awak buat keputusan dan ambil cabaran dengan tekad."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Jadi, saya nak ucapkan terima kasih. Itu salah satu daripada dua sebab saya panggil awak ke sini! ――Adapun sebab kedua…"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Hari ini takkan datang lagi. Esok tak dijamin. Perang ni buat saya sedar sekali lagi apa yang saya rasa saya dah tahu. Saya bersyukur kepada orang baik yang bawa api tu ke dalam mata ni, kepada orang baik yang buat saat ini mungkin. Dan――"</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Cik Taritta, saya sangat suka cara awak dan cara awak berfikir. Untuk cakap lebih jelas, saya teringin sangat nak bersama awak! Jadi, macam mana kalau jadi Taritta O'Connell?"</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"――Ah."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Jangan pernah biar peluang berlalu untuk dapatkan apa yang awak nak. Saya akan praktikkan sepenuhnya semua yang saya belajar dari awak."</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"――Tapi, saya…"</span></div>
+      <div class="narrative">Mata merah muda Ram menyepet melihat ekspresi derita Taritta. Akar tindak balas Taritta, secara anehnya, menjadi jelas semasa perbualan awalnya dengan Medium. Mengikut adat Shudraq, pengantin lelaki mesti dibawa balik ke kampung hutan.</div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Jangan ragu-ragu, Taritta!"</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"――. Ah, kakak?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Seorang Ketua yang kena pilih antara tugasnya dan seorang lelaki tak layak jadi Ketua! Dalam semua pertempuran yang saya lawan, saya belajar cara lawan guna satu kaki! Kalau awak dalam keadaan menyedihkan macam tu, awak patut lepaskan jawatan Ketua!"</span></div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"Apa…! T-tunggu kejap, kakak! Itu…"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Tak ada maknanya, saya takkan tunggu! Shudraq tak perlukan adik yang nampak menyedihkan macam awak!"</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Itu ke cara awak galakkan dia sebagai kakak dia?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Dia bukan jenis perempuan yang akan faham melainkan saya bagitahu dia. Ram, tak lama lagi awak akan dapati diri awak dalam kedudukan yang sama."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Menjijikkan."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"Cik Mizelda! Saya amat berterima kasih! Ada apa-apa yang boleh saya buat untuk balas budi awak?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Ia telah diputuskan. Seorang lelaki yang kuat, tegap dengan wajah kacak akan dihantar sebagai utusan ke kampung Shudraq. Dengan cara ini, Perjanjian antara Ibu Kota Diraja dan rakyat kami akan dikekalkan."</span></div>
+      <div class="dialogue-box box-flop"><span class="char-name char-flop">Flop</span><span class="dialogue-text">"――. Haha! Saya faham, Cik Mizelda! Tak, Kakak Ipar-kun!"</span></div>
+      <div class="narrative">Satu resolusi telah dicapai antara Mizelda dan Flop, tanpa merujuk pihak-pihak yang terlibat terlebih dahulu. Ram juga faham bahawa pihak yang diabaikan itu akan membuat keputusan tidak lama lagi.</div>
+      <div class="dialogue-box box-taritta"><span class="char-name char-taritta">Taritta</span><span class="dialogue-text">"――Hk."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Adakah awak pasti tak apa untuk buat keputusan sendiri kembali menjadi Ketua?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Ha. Kalau ada sesuatu yang seseorang tak setuju, apa yang mereka perlu buat cuma ambil ia dari saya. Tapi…"</span></div>
+      <div class="dialogue-box box-kuna"><span class="char-name char-kuna">Kuna</span><span class="dialogue-text">"Macam mana keadaannya? Adakah Taritta akhirnya mula berkelakuan baik?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Ya, adik perempuan saya tu memang susah dikawal."</span></div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Walaupun tak disangka, usaha mengintai Ram sangat berbaloi."</span></div>
+      <div class="dialogue-box box-kuna"><span class="char-name char-kuna">Kuna</span><span class="dialogue-text">"Tanpa Ketua di sini, ia akan meninggalkan kesan yang teruk, kan? Benda karut apa untuk dikatakan."</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Kakak jiwanya… sejak Mariuli mati, Taritta kemurungan. Korang mungkin faham betapa sakitnya tu, kan?"</span></div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"Masa dah tiba untuk itu berubah. ――Saya anggap ia satu berkat yang Taritta peroleh kemenangan ini."</span></div>
+      <div class="narrative">Empayar telah menang, tetapi sebagai pertukaran, begitu banyak yang telah hilang. Malah dekat dengan Ram, luka yang dialami oleh Rem, Emilia, dan Subaru, adalah ketara.</div>
+      <div class="dialogue-box box-mizelda"><span class="char-name char-mizelda">Mizelda</span><span class="dialogue-text">"――Kepada sumpah nenek moyang kami, dan kebanggaan roh leluhur mereka, kesyukuran."</span></div>
+      <div class="dialogue-box box-kuna"><span class="char-name char-kuna">Kuna & Holly</span><span class="dialogue-text">"――Kesyukuran."</span></div>
+      <div class="narrative">Kepada Taritta, yang telah menemui satu-satunya kaedah untuk mengatasi keadaan ini, Mizelda, Kuna, dan Holly memberikan restu mereka dengan cara Rakyat Shudraq. Mengikut contoh gadis-gadis itu, Ram memejamkan matanya dan menyertai doa itu.</div>
+      <div class="dialogue-box box-ram"><span class="char-name char-ram">Ram</span><span class="dialogue-text">"Kesyukuran."</span></div>
+      <div class="loop-marker">TAMAT</div>
+    `,
+    3: `
+      <h2 class="battle-title">Bab 3: Bagi Setiap Mereka yang Meratapimu</h2>
+
+      <div class="narrative">
+        Roda kerusi roda berpusing dengan bunyi berkerincing.
+        Ia adalah bunyi yang sudah biasa didengari mereka, tetapi ada bunyi hentakan sekali-sekala bercampur, disebabkan oleh saki-baki kekacauan, serpihan runtuhan dan retakan di koridor yang belum dibaiki sepenuhnya.
+        Berasa tidak sedap hati membiarkan <span class="red-text">Katya</span> pergi ke tempat sebegitu sendirian, <span class="red-text">Rem</span> telah mengambil tanggungjawab untuk menolak kerusi rodanya.
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Jadi, nampaknya kerja dia melindungi Duli Yang Maha Mulia Maharaja sangat dihargai. Dia cakap sebagai Jeneral bebas, dia akan diberi peranan melindungi Maharaja di sisinya."</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Begitu ke? Abang awak tu…"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Muka awak nampak macam nak cakap sesuatu… Tak, tak payah lah. Awak tak payah cakap. Apa yang awak fikir, saya mungkin fikir benda yang sama."</span>
+      </div>
+
+      <div class="narrative">
+        Tanpa menoleh, Katya menggenggam tocangnya sendiri yang tergantung di bahunya, suaranya gementar ketika dia bercakap.
+        Rem tidak banyak berkata apa-apa, tetapi tekaan Katya mungkin betul. Oleh itu, dia memutuskan untuk menyimpan fikirannya tentang <span class="red-text">Jamal</span> untuk dirinya sendiri, seperti yang diminta.
+        Walau apa pun keadaannya, Katya telah menghantar abang kandungnya pergi walaupun berasa cemas. Kepulangannya dengan selamat pasti sangat melegakan, walaupun kepada Katya yang degil.
+        Memang, kepulangannya dengan selamat adalah yang paling penting.
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"<span class="red-text">Priscilla-san…</span>"</span>
+      </div>
+
+      <div class="narrative">
+        Tiba-tiba, semasa fikirannya melayang, Rem diserang gelombang sentimen yang mengetatkan dadanya, menyebabkan dia mengucapkan kata-kata itu.
+        Semasa Rem menundukkan mata biru pucatnya ke bawah, fikirannya dipenuhi dengan imej seorang wanita cantik yang dibalut dengan api merah terang―― <span class="red-text">Puteri Matahari</span> yang telah menyimpan Rem di sisinya untuk masa yang singkat.
+        Priscilla, dengan kehadirannya yang tidak goyah, memancarkan haba yang dipakainya dan membakar segala-galanya, menutup tirai pada dirinya sendiri dengan keanggunan yang tidak dapat disangkal miliknya sambil menjauhkan orang lain.
+        Kata-kata yang ditukar dalam apa yang dia tidak jangkakan sebagai perbualan terakhir mereka adalah kata-kata yang tidak mungkin dia lupakan.
+        Walau bagaimanapun――,
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Awak kata saya ada 'hati berlian', tapi saya tak faham."</span>
+      </div>
+
+      <div class="narrative">
+        Selepas berjumpa satu sama lain buat kali pertama dalam beberapa hari, semasa apa yang juga ternyata menjadi perbualan terakhir mereka, Priscilla telah memuji Rem untuk siapa dirinya sekarang. Rem juga, telah dapat menerimanya dengan tenang pada masa itu.
+        Tetapi sekarang, dia tidak pasti lagi. Kerana Priscilla sudah tiada.
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Hei, Rem, tak apa ke awak tinggal dengan saya?"</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Eh?"</span>
+      </div>
+
+      <div class="narrative">
+        Tiba-tiba, Rem terkejut apabila pergerakan kerusi roda yang ditolaknya terhenti. Memandang ke bawah, dia melihat Katya telah mencengkam roda, secara paksa menghentikan pergerakannya.
+        Melakukan perkara sedemikian pasti menyakitkan tangan Katya yang kurus.
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Katy――"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Tak apa. Sekarang ni, tangan saya tak penting. Sebaliknya, apa yang penting ialah awak."</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Saya…"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Walaupun awak tak ada dengan saya, awak masih ada kakak awak, orang yang tahu siapa awak sebelum ni, dan lelaki bising tu…"</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"――Awak tak boleh."</span>
+      </div>
+
+      <div class="narrative">
+        Merenung Rem, kata-kata Katya menjadi semakin laju sehingga dia terdiam dengan "Mhm". Rem memotongnya dan menggelengkan kepalanya, bersyukur atas keprihatinannya.
+        Sudah tentu, kehadiran <span class="red-text">Ram</span>, serta <span class="red-text">Frederica</span> dan <span class="red-text">Petra</span>, akan menjadi sumber sokongan untuk Rem. Tetapi, mereka pun tidak dapat mengisi kekosongan yang ditinggalkan oleh ketiadaan Priscilla. Hari-hari dan saat-saat yang Rem habiskan bersama Priscilla tidak pernah diketahui oleh mereka.
+        Dan, bagi orang terakhir yang Katya sebutkan, <span class="red-text">Subaru</span>――,
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Saya tak nak bergantung pada orang tu sekarang."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"…Maksud awak dia tak boleh diharap?"</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Tak… Saya tak <i>nak</i> bergantung pada dia. Saya tak suka. Untuk jadi sekadar satu lagi daripada banyak matlamat dia."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"――――"</span>
+      </div>
+
+      <div class="narrative">
+        Jawapan Rem mengejutkan dirinya sendiri semasa dia bercakap mengatasi soalan Katya. Mata Katya juga terbeliak mendengar jawapan Rem, yang boleh difahami.
+        Malah Rem sendiri tidak memahami sepenuhnya perasaannya sendiri sehinggalah dia meluahkannya.
+        Sebaik sahaja dia melakukannya, ia menjadi jelas kepadanya.
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Nampaknya awak cuma nampak kekurangan saya, Katya-san."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Saya tak rasa macam tu, dan kalau kita bercakap pasal rasa malu, saya pun ada bahagian saya… sebenarnya, jangan buat saya fikir pasal tu, dan jangan ingatkan saya! Cuma fikir pasal masalah yang saya bagi kat orang lain dengan hanya hidup buat saya rasa nak m… nak menderita!"</span>
+      </div>
+
+      <div class="narrative">
+        Mempertimbangkan perasaan Rem, dia mungkin menahan diri daripada berkata "nak mati".
+        Mendengar belas kasihan Katya yang tidak sempurna namun bertimbang rasa, bibir Rem melengkung sedikit. Dia berasa disokong dengan kehadiran Katya semata-mata, kerana Katya akan berkata perkara sebegitu tanpa terlalu risau atau terlalu memujuk.
+        Sebab itulah dia bertanya jika Rem boleh tinggal bersamanya.
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Berada di sisi awak menenangkan, Katya-san. Awak sentiasa memekik kuat dan menarik perhatian saya serta-merta."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Tu pujian ke? Awak cuba puji saya ke? Kalau ya, awak tak ada bakat untuk puji orang lain, tahu tak?"</span>
+      </div>
+
+      <div class="narrative">
+        Rem, yang berniat untuk meluahkan rasa terima kasihnya yang tulus, agak terkejut dengan renungan tajam Katya. Dan, begitu sahaja, Rem dan Katya mendapati diri mereka berjalan melalui kubu itu.
+        Mendengar seseorang berkata "Ohhh~," Rem mendongak. Di sana, dia melihat seorang pemuda berambut kelabu, tersenyum lebar dan melambai ke arah mereka.
+        Rem tidak tahu siapa orang ini, tetapi Katya mengeluarkan bunyi "Ah" pengiktirafan,
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Awak kenal dia?"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Saya takkan cakap macam tu, tapi saya tahu dia pemalas."</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Pemalas?"</span>
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Tuuunggu~ tunggu, tu bukan cara yang baik untuk ingat saya. Hmm, pada masa tu, ia tak sepenuhnya salah pun, kan?"</span>
+      </div>
+
+      <div class="narrative">
+        Pemuda itu, tidak begitu tergesa-gesa, dengan santai membetulkan tanggapan Katya terhadapnya. Semasa dia mendekati, Rem mengetatkan cengkamannya pada pemegang kerusi roda, berwaspada terhadapnya.
+        Melihat reaksi Rem, pemuda itu mengangkat tangannya dan berhenti melangkah.
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Jangan risau. Saya bukan jenis orang yang akan cederakan sesiaaapa~. Saya cuma lelaki menyedihkan yang dah hilang satu-satunya bakat dia dan sekarang menyelinap pergi dengan semangat reeendah~."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Menyelinap pergi dengan semangat rendah… awak nak pergi mana? Malas lagi? Pada masa semua orang sedang berjuang dan menyokong satu sama lain dengan segala cara yang mungkin?"</span>
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Saya dah bagitaahu~ awak, bukan macam tu. Walaaaaupun~, saya setuju dengan awak tentang situasi sekarang."</span>
+      </div>
+
+      <div class="narrative">
+        Dengan senyuman kelat, pemuda itu memandang ke belakangnya―― ke arah Bandar Berkubu yang masih dalam peringkat awal pembinaan semula, dan mendepangkan tangannya yang kurus luas ke kedua-dua belah,
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Sampai sekarang, saya letakkan sasaran saya terlalu tinggi. Mulai sekarang, saya rancang untuk kekalkan kaki saya di tanah, dan jalani hidup saya dengan fummmmpu~ kan pada apa yang ada betul-betul di depan saya."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"…Saya tak faham. Pengisytiharan jenis apa tu?"</span>
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Itu saya bersikap hormat, cik. Saya tak paaaasti~ kalau saya akan dapat peluang untuk jumpa awak, tapi mungkin ini gerak isyarat bergaya terakhir dari bintang-bintang."</span>
+      </div>
+
+      <div class="narrative">
+        Katya tidak membuang ekspresi bingungnya mendengar ungkapan samar pemuda itu. Sebaliknya, sementara Rem kekal berhati-hati, jelas bahawa pemuda ini tidak mempunyai niat jahat atau permusuhan terhadap Katya.
+        Sebaliknya, seperti yang dikatakannya, nampaknya terdapat rasa hormat yang tulus terhadap Katya.
+        Tidak jelas jika ini ada kaitan dengan Katya memanggilnya pemalas, walaupun begitu.
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Cik, awak dah selamatkan Empayar Vollachia. Kecerahan matahari terbit dan aktiviti orang ramai yang awak nampak dari sini adalah semua benda yang awak rampas dari Perintah saya."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"…Awak sedang ejek saya ke?"</span>
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Tak tak taaak~, bukan macam tu langsung. Saya dah buat banyak benda ikut Perintah saya, tapi tak ada apa yang Duli Yang Maha Mulia Maharaja atau Jeneral Kelas Pertama Chisha buat pernah kejutkan saya. Apa yang saya maksuuud~ kan ialah awak satu-satunya yang buat begitu."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Saya betul-betul tak faham apa maksud awak. Rasa macam awak berdendam sebab saya panggil awak pemalas. Tapi…"</span>
+      </div>
+
+      <div class="narrative">
+        Apabila pemuda itu memberikan senyuman kelat sebagai tindak balas kepada jawapan Katya, dia berhenti sejenak. Kemudian dia bergumam sedikit, menunjuk ke arah Rem di belakangnya, dan menyambung,
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Sebab saya ada kat sana ialah sebab saya diseret oleh Rem. Dan lagipun, dekat rumah agam Perdana Menteri lah saya jumpa perempuan ni mula-mula, dan lepas tu <span class="red-text">Todd</span>… ah~, apa-apa pun!"</span>
+      </div>
+
+      <div class="narrative">
+        Katya, yang tadi menunjuk ke arah Rem, kini menunjuk tajam ke arah pemuda itu.
+        Kemudian――,
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Saya tak jadi besar kepala bila dapat pujian, tak kira sama ada saya faham logik atau alasan di sebaliknya atau tak. Pertama sekali, cakap perempuan kaki cacat ni hebat atau istimewa sangat boleh dipersoalkan! Saya tak boleh buat apa-apa sendiri! Semuanya, semua ni terima kasih kepada orang lain!"</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"K-Katya-san, bukankah tu agak melampau…?"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Hah? Saya masih suruh awak tolak kerusi roda saya sekarang ni, kan? Kalau roda ni tersangkut dalam lubang kat lantai sekali pun, saya akan jadi longgokan tulang kat situ jugak!"</span>
+      </div>
+
+      <div class="narrative">
+        Rem terharu dengan pengisytiharan Katya yang lantang dan berani.
+        Semasa dia menyedari bahawa campuran indah penyusutan diri dan kepercayaan kepada orang lain inilah yang membuatkan cara pemikiran Katya begitu menarik――,
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Heh, haha, haaahahahaha~!"</span>
+      </div>
+
+      <div class="narrative">
+        Semasa Rem sedang berfikir, pemuda itu mula ketawa histeria, memegang perutnya. Bahu Katya terlonjak semasa dia bertindak balas dengan "A-apa?" dalam keadaan gelabah, tetapi Rem entah bagaimana faham kenapa pemuda itu ketawa.
+        Tersepit di antara pemahaman samar Rem dan kekurangan pemahaman Katya, pemuda itu menggunakan jarinya untuk menyapu air mata yang bergenang di matanya,
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Haaa~, seronok sangat bercakap dengan awak. Kalau awak bagitahu saya benda macam tu boleh buang Perintah saya, saya tak tahu nak cakap apa."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Saya tak faham kenapa awak puas hati sorang-sorang…"</span>
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Maaf, taaapi~ awak kena minta orang lain tolong awak dengan tu. ――Ini adalah selamat tinggal."</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Ke mana awak akan pergi?"</span>
+      </div>
+
+      <div class="narrative">
+        Rem tidak dapat menahan diri daripada bertanya kepada pemuda yang telah memikul bungkusan kecil di kakinya.
+        Walaupun dia tidak tahu namanya, dan dia tidak mempunyai sebab untuk menghalangnya, dia tidak mahu pemuda yang memuji Katya itu tidak bahagia.
+        Sebagai tindak balas kepada soalan Rem, pemuda itu menunjuk ke arah Gunung Gildray, di mana kubu itu berdiri,
+      </div>
+
+      <div class="dialogue-box box-youth">
+        <span class="char-name char-youth">Pemuda</span>
+        <span class="dialogue-text">"Buat masa ni, saya tinggalkan Empayar. Baaaiklah~ kalau begitu, jaga diri."</span>
+      </div>
+
+      <div class="narrative">
+        Baik Rem mahupun Katya tidak dapat mencari kata-kata untuk menghalang pemuda itu yang hanya menjawab begitu dan memusingkan badannya untuk berjalan pergi. Mereka hanya mampu mendoakan nasib baik semasa dia memulakan perjalanannya dengan ceria.
+        Sebab dia boleh berjalan dengan begitu yakin dengan belakang yang tegak adalah terima kasih kepada Rem, Katya, dan ramai orang lain, tetapi yang paling penting, ia adalah terima kasih kepada <i>dia</i> kerana membuka jalan untuk masa depan dengan cara hidupnya yang mempesonakan.
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Semuanya, terima kasih kepada orang lain…"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"K-kenapa, awak ada masalah dengan sesuatu ke? Saya tahu saya mungkin melebih-lebih sikit dengan apa yang saya cakap…!"</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Tak. Saya fikir ia sangat bagus, dan sangat macam awak, Katya-san. Saya pun tak nak buat kesilapan berfikir yang saya boleh berdiri sendiri."</span>
+      </div>
+
+      <div class="narrative">
+        Sebagai tindak balas kepada jelingan sekejap-sekejap Katya, Rem menggosok kakinya. Semasa dia memerhatikan gerak-geri ini, Katya, dengan mata menunduk,
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"Pada satu ketika, awak mula berjalan seperti biasa semula."</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Nampaknya sebab Mana yang sepatutnya mengalir dalam badan saya tak buat begitu dengan betul… Ia mungkin berkesan juga pada kaki awak, Katya-san."</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"…Saya akan okey. Abang saya, atau orang lain, akan tolak kerusi roda saya untuk saya. Lagipun…"</span>
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Lagipun?"</span>
+      </div>
+
+      <div class="dialogue-box box-katya">
+        <span class="char-name char-katya">Katya</span>
+        <span class="dialogue-text">"――Awak masih akan jadi orang yang tolak saya untuk sikit masa lagi, kan?"</span>
+      </div>
+
+      <div class="narrative">
+        Mata Rem terbeliak sedikit apabila Katya berkata demikian dengan takut-takut, tetapi kemudian dia melembutkan pandangannya dan mengangguk dengan lembut "Ya".
+        Kedua-dua Rem dan Katya tahu dengan baik bahawa "untuk sikit masa lagi" tidak akan lama sama sekali, dan pertukaran mereka dibina atas pemahaman itu.
+        Dia pasti bahawa perpisahannya dengan Katya akan tiba tidak lama lagi―― apabila Rem perlu kembali ke tempat asalnya bersama Subaru, Ram, dan yang lain yang datang untuk mengambilnya. Ia akan menjadi pengalaman yang menyakitkan.
+        Tetapi, berpisah dengan Katya dan orang-orang di tanah ini, adalah perpisahan yang meninggalkan harapan untuk pertemuan semula. Mengajarnya kesakitan dan kepahitan perpisahan yang bukan jenis itu, ia adalah tindakan terakhir <i>dia</i> untuk――,
+      </div>
+
+      <div class="dialogue-box box-rem">
+        <span class="char-name char-rem">Rem</span>
+        <span class="dialogue-text">"Pertimbangan? Atau, adakah ia niat jahat, Priscilla-san?"</span>
       </div>
 
       <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Ya, itu rancangannya. Saya kat Empayar sebagai utusan dari Kararagi, tahu. Saya tahu ia cuma gelaran, tapi saya kena jalankan tugas saya."</span>
+        <span class="char-name char-anastasia">Priscilla</span>
+        <span class="dialogue-text">"Rem, ikutlah hati kamu sendiri. Kerana walaupun hati kamu mungkin bergelora, gelora itu tidak akan sesekali menjadi tidak elok."</span>
       </div>
 
       <div class="narrative">
-        Apabila <span class="red-text">Anastasia</span>, tersenyum lembut, secara terbuka mendedahkan fikiran dalamannya kepada <span class="red-text">Otto</span>, dia menerimanya dengan "Saya faham" yang tenang dan bersahaja di permukaan.
-        Walau bagaimanapun, fikiran dalamannya tidak sebebas ekspresinya.
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Ada segunung benda nak difikirkan, mesti susah untuk Otto-kun, kan?"</span>
-      </div>
-
-      <div class="narrative">
-        Kesunyian seketika itu ditembusi oleh mata biru muda Anastasia.
-        Sebagai tindak balas kepada pertanyaannya, Otto tersenyum kembali dan berkata, "Tidak",
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Memang benar ia agak menakutkan, tetapi jika kita bercakap dari segi mempunyai banyak perkara untuk difikirkan, saya tidak boleh membandingkannya dengan Duli Yang Maha Mulia Maharaja atau Perdana Menteri Berstetz, yang perlu membina semula Empayar dari saat ini."</span>
-      </div>
-
-      <div class="narrative">
-        Dengan itu, Otto mengalihkan subjek kepada orang lain yang hadir―― kepada <span class="red-text">Berstetz</span>, Perdana Menteri Empayar.
-      </div>
-
-      <div class="dialogue-box box-berstetz">
-        <span class="char-name char-berstetz">Berstetz</span>
-        <span class="dialogue-text">"Seperti yang awak nyatakan, terdapat banyak cabaran di hadapan. Tetapi sebenarnya, saya tidak menganggapnya sebagai beban."</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Oh, ye ke? Itu sangat menggalakkan."</span>
-      </div>
-
-      <div class="dialogue-box box-berstetz">
-        <span class="char-name char-berstetz">Berstetz</span>
-        <span class="dialogue-text">"Pada mulanya, saya adalah subjek khianat yang bersabahat dengan Labah-labah Putih, Chisha Gold, untuk menjejaskan kedudukan Duli Yang Maha Mulia Maharaja. Disebabkan keadaan, saya tidak dihukum mati semasa pertempuran menentang Bencana Besar, tetapi saya masih akan dihukum mati selepas perang."</span>
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"…Tetapi awak bercakap dengan kami seperti ini. Tiada tindakan sedemikian, betul?"</span>
-      </div>
-
-      <div class="dialogue-box box-berstetz">
-        <span class="char-name char-berstetz">Berstetz</span>
-        <span class="dialogue-text">"Ya. Maharaja telah memutuskan sedemikian."</span>
-      </div>
-
-      <div class="narrative">
-        Otto boleh mengagak apa yang difikirkan Berstetz. Ia mungkin sebab terbesar mengapa kepala Berstetz masih bersambung dengan lehernya―― penegasan yang dibuat selepas perang oleh lelaki terkuat di Empayar, <span class="red-text">Petir Biru</span>.
-      </div>
-
-      <div class="dialogue-box box-cecilus">
-        <span class="char-name char-cecilus">Cecilus</span>
-        <span class="dialogue-text">"Sebelum mana-mana watak sampingan jadi dahagakan darah, saya ingin isytiharkan bahawa ia adalah keputusan Duli Yang Maha Mulia untuk tidak membunuh Berstetz-san, jadi kamu semua patut ikutnya. Kalau kamu menentangnya, saya terpaksa tunjukkan sisi seperti pedang saya buat kali pertama dalam masa yang lama. Lagipun, saya ada perasaan samar-samar yang Chisha merancang sehingga ke tahap Duli Yang Maha Mulia tidak akan membunuh Berstetz-san. Sebenarnya, tanpa Berstetz-san, susah nak teruskan, kan? Memandangkan Chisha tiada di sini."</span>
-      </div>
-
-      <div class="dialogue-box box-berstetz">
-        <span class="char-name char-berstetz">Berstetz</span>
-        <span class="dialogue-text">"Saya tidak pernah sangka saya akan dilindungi oleh Jeneral Kelas Pertama Cecilus Segmunt. Jika bukan <span class="red-text">Pedang Yang</span>, saya akan sangka bilahnya yang akan memenggal kepala saya."</span>
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Namun ia tidak berlaku. Ia adalah situasi Empayar, jadi orang luar tidak boleh mengulas mengenainya, namun saya menganggapnya sebagai keputusan yang bijak. Pegawai tentera dalam kecemasan dan pegawai awam sebelum dan selepas kecemasan, orang sebegitu tidak boleh diganti."</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Saya setuju. Kalau Berstetz-san pun dibuang dan Maharaja satu-satunya yang boleh berfikir, bukankah dia akan mati, walaupun dengan sokongan Isteri-san dia yang cantik?"</span>
-      </div>
-
-      <div class="dialogue-box box-berstetz">
-        <span class="char-name char-berstetz">Berstetz</span>
-        <span class="dialogue-text">"Memang, begitulah. Saya, bagi pihak saya, gembira melihat Duli Yang Maha Mulia menerima Maharani Permaisuri baru. ――Jika bukan kerana perayaan ini, Duli Yang Maha Mulia akan menghadapi terlalu banyak kesukaran."</span>
-      </div>
-
-      <div class="narrative">
-        Berstetz menggelengkan kepalanya perlahan, kesunyian jatuh ke atas bilik itu semasa dia menumpahkan kata-kata itu.
-        Sebab kesunyian ini, tidak perlu dikatakan lagi, adalah peristiwa tragis yang menimpa Vincent―― kematian orang kepercayaannya dan kakaknya, puteri yang berkongsi darah yang sama dengannya.
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Dia betul-betul seorang puteri yang mementingkan diri sendiri."</span>
-      </div>
-
-      <div class="narrative">
-        Gumam senyap terlepas dari bibir Anastasia, menyebabkan Otto memejamkan matanya.
-        Sentimen halus itu adalah retakan yang jarang berlaku dalam Anastasia.
-      </div>
-
-      <div class="dialogue-box box-echidna">
-        <span class="char-name char-echidna">???</span>
-        <span class="dialogue-text">"Mungkin awak tidak perlu secara sedar cuba memainkan watak penjahat."</span>
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"――. Adakah awak mungkin bercakap dengan saya?"</span>
-      </div>
-
-      <div class="narrative">
-        Tiba-tiba, Otto bertindak balas terhadap suara ketiga, yang bukan milik Anastasia mahupun Berstetz. Pandangannya diarahkan ke leher Anastasia, dari mana suara itu berasal―― Roh dalam bentuk selendang musang, <span class="red-text">Echidna</span>, memandang kembali kepadanya dengan mata hitamnya.
-      </div>
-
-      <div class="dialogue-box box-echidna">
-        <span class="char-name char-echidna">Echidna</span>
-        <span class="dialogue-text">"Fakta bahawa awak menganggapnya sebagai kenyataan yang ditujukan kepada diri awak sendiri adalah bukti apa yang ada dalam hati awak, bukan?"</span>
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Hujah itu tidak begitu meyakinkan, memandangkan awak mengatakannya sambil memandang saya."</span>
-      </div>
-
-      <div class="dialogue-box box-echidna">
-        <span class="char-name char-echidna">Echidna</span>
-        <span class="dialogue-text">"Agak degil, awak ni. Padanan yang baik dengan Ana dalam hal itu."</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Jangan ganggu Otto-kun macam tu. Saat awak dibenarkan bercakap dengan orang, awak jadi mulut murai."</span>
-      </div>
-
-      <div class="dialogue-box box-echidna">
-        <span class="char-name char-echidna">Echidna</span>
-        <span class="dialogue-text">"Mhm, jangan bercakap seolah-olah saya hanya membuka mulut kerana keinginan peribadi. Sudah tentu, dari kedudukan semasa saya, saya perlu mengakui bahawa keadaan saya sebelum ini adalah terhad."</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Aduhai. Maaf, Otto-kun, anak saya ganggu awak."</span>
-      </div>
-
-      <div class="narrative">
-        Permohonan maaf Anastasia disambut dengan "Tidak" dan lambaian menolak daripada Otto.
-        Berita kematian Priscilla telah menggoncang malah Anastasia, dan lebih-lebih lagi Kem mereka―― hati Otto kekal tidak terganggu pada tahap yang dia menganggap dirinya tidak berhati perut.
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Ia berkemungkinan sepenuhnya untuk seorang calon tercicir di tengah-tengah Pemilihan Diraja."</span>
-      </div>
-
-      <div class="narrative">
-        Sememangnya, dia tidak menyangka bahawa dia akan kehilangan nyawanya dalam pertempuran untuk kelangsungan hidup negara jiran, tetapi apabila melibatkan perselisihan politik, terdapat lebih daripada cukup kemungkinan untuk pembunuh upahan dihantar.
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Rancangannya adalah untuk kita kembali ke Kerajaan dalam masa beberapa hari akan datang. Empayar tidak mahu orang dari negara lain tahu lebih lanjut tentang keadaan dalaman mereka selepas Bencana Besar, bukan?"</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Sama juga untuk kami. Memandangkan pelik juga untuk langkah kita selari, bergantung pada sama ada kita dah siapkan semua persiapan, kami mungkin bertolak ke Kararagi seawal esok. Otto-kun, mengenai laporan ke istana…"</span>
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Sila serahkan kepada kami. Ini bukan perkara yang boleh disampaikan melalui surat."</span>
-      </div>
-
-      <div class="narrative">
-        Secara jujur, ia adalah peranan yang menakutkan, tetapi juga tugas kritikal pada masa yang sama. Sudah tentu, Otto akan menemani Emilia dalam hal ini, tetapi ia mungkin menjadi peranan yang sangat sukar baginya.
-        Pada masa-masa sebegini, tugas satu-satunya Kesatria Emilia sepatutnya menyokongnya sepenuhnya.
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"…Dengan keadaan Natsuki-san sekarang, ia mungkin akan memberi kesan sebaliknya kepada Emilia-sama."</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"…Dari bunyinya, situasi Natsuki-kun belum berubah?"</span>
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"Memang. Kesatria Julius juga muncul beberapa kali, tetapi ia sukar. Saya benci katakan ini, tetapi ada tanggapan bahawa Priscilla-sama hanya pernah menyusahkannya…"</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Setakat yang Natsuki-kun fikirkan, itu tidak penting. ――Merisaukan."</span>
-      </div>
-
-      <div class="narrative">
-        Semasa dia bercakap dengan suara perlahan, hujung jari Anastasia menggeletek leher Echidna. Mata gelap Echidna juga kelihatan bimbang tentang Subaru semasa dia gementar pada sentuhan itu.
-      </div>
-
-      <div class="dialogue-box box-berstetz">
-        <span class="char-name char-berstetz">Berstetz</span>
-        <span class="dialogue-text">"Saya faham pendapat utusan kedua-dua Kerajaan dan Negara-Negara Kota. Duli Yang Maha Mulia Maharaja telah mengarahkan agar kedua-dua negara diberikan setiap layanan, dan telah memberi saya kebenaran untuk membuat keputusan mengenai perkara itu. Jika ada apa-apa yang boleh saya lakukan…"</span>
-      </div>
-
-      <div class="dialogue-box box-anastasia">
-        <span class="char-name char-anastasia">Anastasia</span>
-        <span class="dialogue-text">"Tak boleh cakap yang saya akan ambil mudah perkara ni. Tak ada yang lebih menegangkan daripada disajikan dengan nota janji hutang kosong."</span>
-      </div>
-
-      <div class="narrative">
-        Anastasia memberikan senyuman kelat kepada Berstetz. Otto, yang berkongsi kerangka fikiran yang sama, tidak sabar untuk memanfaatkan kata-kata yang telah ditarik keluar.
-        Ini adalah tempatnya dalam Kem Emilia; bukan sebagai penjahat, sebaliknya sebagai orang yang melakukan "kejahatan yang perlu".
-        Kerana sifatnya begitu, dia akan merancang untuk menggunakan asal-usul Priscilla dalam Keluarga Diraja sebagai asas untuk dia menarik diri sebagai Calon Diraja yang tidak layak, dan dia akan memilih untuk melaksanakannya, sekiranya dia tidak meninggal dunia.
-        Memang, dia boleh membuat pilihan itu.
-        Sebab itu――,
-      </div>
-
-      <div class="dialogue-box box-otto">
-        <span class="char-name char-otto">Otto</span>
-        <span class="dialogue-text">"――Walaupun awak tidak mati, awak tidak akan menjadi musuh kami. Walau betapa Natsuki-san dan Emilia-sama terluka kerananya, kematian awak telah… memberikan saya pukulan yang agak keras."</span>
-      </div>
-
-      <div class="narrative">
-        Sebagai seseorang dari kem yang berbeza, tanpa sebab untuk meratapi dan bersedih atas kematiannya, itu adalah sedikit ucapan takziah yang Otto Suwen boleh tawarkan kepada wanita yang telah meninggal dunia itu.
+        Semasa Rem bergumam sendirian, kata-kata terakhir Priscilla kepadanya terlintas di fikirannya.
+        Gelora hatinya mungkin merujuk kepada kelemahan dalam diri Rem yang akan sentiasa, dan selamanya, timbul ke permukaan seperti buih, cuba mengganggu ketenangannya.
+        Tetapi, masih, dia tidak mahu menjadi jenis orang yang terdesak ingin menolak dan menjauhkan diri daripadanya.
+        Kerana Priscilla, wanita yang menerangi hidup Rem seperti api untuk seketika, yang tidak pernah tersilap tentang kebenaran, telah berkata bahawa "gelora" Rem tidaklah buruk.
+        <br><br>
+        ――Jadi tolong, maafkan hati ini kerana bergelora pada realiti ketiadaanmu. Sehingga hari gelora itu reda, dan saya boleh mengingati awak tanpa air mata.
       </div>
 
       <div class="loop-marker">TAMAT</div>
@@ -1624,7 +1394,7 @@
       </div>
 
       <div class="wall-of-text">
-        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
+        berulang, dan berulang, dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang dan berulang lagi...
       </div>
 
       <div class="narrative">
